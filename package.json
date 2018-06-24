@@ -1,11 +1,11 @@
 {
-  "name": "boilerplate-react-webpack",
+  "name": "care2react",
   "version": "0.2.1",
-  "description": "A webpack React starter",
-  "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
+  "description": "A creation by S.L.S",
+  "repository": "https://github.com/sam-by-name/care2react.git",
   "main": "server/index.js",
-  "author": "EDA",
-  "license": "ISC",
+  "author": "SLS",
+  "license": "MIT",
   "scripts": {
     "start": "webpack && node server",
     "dev": "node server & webpack --watch",
