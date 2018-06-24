@@ -1,4 +1,6 @@
 import React from 'react'
+import Header from './Header'
+import TriForce from './TriForce'
 
 class App extends React.Component {
   constructor (props) {
@@ -6,10 +8,19 @@ class App extends React.Component {
     this.state = {
       name: 'Care2React?'
     }
+    this.pyramid = this.pyramid.bind(this)
   }
+
+  pyramid () {
+    console.log(this.state.name)
+  }
+
   render () {
     return (
-      <h1>{this.state.name}</h1>
+      <div className="myBody">
+        <Header />
+        <TriForce />
+      </div>
     )
   }
 }
