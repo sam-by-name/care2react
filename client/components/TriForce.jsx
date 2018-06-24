@@ -1,8 +1,11 @@
 import React from 'react'
+// import BabyTriangles from './BabyTriangles'
 
 const TriForce = () => {
-  const width = window.innerWidth
-  const height = window.innerHeight
+  // const width = window.innerWidth
+  // const height = window.innerHeight
+  const width = 1893
+  const height = 962
 
   const triangles = {
     width: width / 2,
@@ -10,17 +13,29 @@ const TriForce = () => {
     r: 256
   }
 
-  let style = {
-    color: 'blue',
-    position: 'fixed'
+  const box = {
+    margin: 0
+  }
+
+  let triStyle = {
+    fill: 'lime',
+    stroke: 'purple',
+    strokeWidth: '5',
+    fillRule: 'evenodd'
+  }
+  let circStyle = {
+    fill: 'black',
+    stroke: 'blue',
+    strokeWidth: '5',
+    fillRule: 'evenodd'
   }
 
   return (
-    <svg width={width} height={height}>
-      {/* <polygon points='0, 260 150, 0 300, 260' style={style} /> */}
-      <circle cx={triangles.width} cy={triangles.height} r={triangles.r} style={style} />
+    <svg className='shapeBody' width={width} height={height}>
+      <polygon points='100, 10 40,198 190,78 10,78 160, 198' style={triStyle} />
+      <circle cx={triangles.width} cy={triangles.height} r={triangles.r} style={circStyle} />
     </svg>
   )
 }
-
+// onMouseOver={BabyTriangles}
 export default TriForce

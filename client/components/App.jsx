@@ -8,12 +8,12 @@ class App extends React.Component {
     this.state = {
       name: 'Care2React?'
     }
-    this.pyramid = this.pyramid.bind(this)
+    // this.pyramid = this.pyramid.bind(this)
   }
 
-  pyramid () {
-    console.log(this.state.name)
-  }
+  // pyramid () {
+  //   console.log(this.state.name)
+  // }
 
   render () {
     return (
