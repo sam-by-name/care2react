@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import TriForce from './TriForce'
+// import Circle from './Circle'
 
 class App extends React.Component {
   constructor (props) {
@@ -20,6 +21,7 @@ class App extends React.Component {
       <div className="myBody">
         <Header />
         <TriForce />
+        {/* <Circle /> */}
       </div>
     )
   }

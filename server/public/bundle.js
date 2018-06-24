@@ -18299,6 +18299,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+// import Circle from './Circle'
+
 var App = function (_React$Component) {
   _inherits(App, _React$Component);
 
@@ -18390,10 +18392,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // import BabyTriangles from './BabyTriangles'
 
 var TriForce = function TriForce() {
-  // const width = window.innerWidth
-  // const height = window.innerHeight
-  var width = 1893;
-  var height = 962;
+  var width = window.innerWidth;
+  var height = window.innerHeight;
+  // const width = 1893
+  // const height = 962
 
   var triangles = {
     width: width / 2,
@@ -18401,26 +18403,25 @@ var TriForce = function TriForce() {
     r: 256
   };
 
-  var box = {
-    margin: 0
-  };
-
   var triStyle = {
     fill: 'lime',
     stroke: 'purple',
     strokeWidth: '5',
-    fillRule: 'evenodd'
+    fillRule: 'evenodd',
+    position: 'absolute',
+    zIndex: '100'
   };
   var circStyle = {
     fill: 'black',
     stroke: 'blue',
     strokeWidth: '5',
-    fillRule: 'evenodd'
+    fillRule: 'evenodd',
+    position: 'absolute'
   };
 
   return _react2.default.createElement(
     'svg',
-    { className: 'shapeBody', width: width, height: height },
+    { className: 'shapeBody', viewBox: '0 0 ' + width + ' ' + height },
     _react2.default.createElement('polygon', { points: '100, 10 40,198 190,78 10,78 160, 198', style: triStyle }),
     _react2.default.createElement('circle', { cx: triangles.width, cy: triangles.height, r: triangles.r, style: circStyle })
   );

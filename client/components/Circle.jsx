@@ -1,7 +1,7 @@
 import React from 'react'
 // import BabyTriangles from './BabyTriangles'
 
-const TriForce = () => {
+const Circles = () => {
   const width = window.innerWidth
   const height = window.innerHeight
   // const width = 1893
@@ -13,14 +13,6 @@ const TriForce = () => {
     r: 256
   }
 
-  let triStyle = {
-    fill: 'lime',
-    stroke: 'purple',
-    strokeWidth: '5',
-    fillRule: 'evenodd',
-    position: 'absolute',
-    zIndex: '100'
-  }
   let circStyle = {
     fill: 'black',
     stroke: 'blue',
@@ -30,11 +22,10 @@ const TriForce = () => {
   }
 
   return (
-    <svg className='shapeBody' viewBox={`0 0 ${width} ${height}`}>
-      <polygon points='100, 10 40,198 190,78 10,78 160, 198' style={triStyle} />
+    <svg className='shapeBody' width={width} height={height}>
       <circle cx={triangles.width} cy={triangles.height} r={triangles.r} style={circStyle} />
     </svg>
   )
 }
-// onMouseOver={BabyTriangles}
-export default TriForce
+
+export default Circles
