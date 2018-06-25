@@ -1,14 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Eater');
+
 #care2React {
   margin: 0 !important;
   padding: 0 !important;
 }
 
-h1 {
+.mainTit {
+  height: 300px;
   text-align: center;
   font-size: 3em;
-  margin: 0 auto;
-  color: red;
+  /* margin: 10% auto 0 auto; */
+  font-family: 'Eater', 'cursive';
+  left : 25%;
   position: fixed;
+  float: left;
+}
+
+.h1a {
+  float      : left;
+  color      : darkred;
+}
+.h1b {
+  float      : left;
+  color      : rgb(161, 7, 7);
+}
+.h1c {
+  float      : left;
+  color      : rgb(209, 7, 7);
+}
+.h1d {
+  float      : left;
+  color      : rgb(248, 7, 7);
+}
+.h1e {
+  float      : left;
+  color      : rgb(252, 92, 0);
+}
+.h1f {
+  float      : left;
+  color      : rgb(250, 142, 0);
+}
+.h1g {
+  float      : left;
+  color      : rgb(247, 190, 4);
+}
+.h1h {
+  float      : left;
+  color      : rgb(238, 255, 0);
+}
+.h1i {
+  float      : left;
+  color      : rgb(94, 255, 0);
+}
+.h1j {
+  float      : left;
+  color      : rgb(0, 255, 34);
+}
+
+.subTit {
+  height: 300px;
+  text-align: center;
+  font-size: 2em;
+  /* margin: 10% auto 0 auto; */
+  font-family: 'Eater', 'cursive';
+  left : 20%;
+  position: fixed;
+  float: left;
+}
+
+.h3a {
+  float      : left;
+  color      : darkred;
+}
+.h3b {
+  float      : left;
+  color      : rgb(161, 7, 7);
+}
+.h3c {
+  float      : left;
+  color      : rgb(209, 7, 7);
+}
+.h3d {
+  float      : left;
+  color      : rgb(248, 7, 7);
+}
+.h3e {
+  float      : left;
+  color      : rgb(252, 92, 0);
+}
+.h3f {
+  float      : left;
+  color      : rgb(250, 142, 0);
+}
+.h3g {
+  float      : left;
+  color      : rgb(247, 190, 4);
+}
+.h3h {
+  float      : left;
+  color      : rgb(238, 255, 0);
+}
+.h3i {
+  float      : left;
+  color      : rgb(94, 255, 0);
+}
+.h3j {
+  float      : left;
+  color      : rgb(0, 255, 34);
+}
+
+.h3l {
+  float      : left;
+  
+}
+.h3m {
+  float      : left;
+  
+}
+.h3n {
+  float      : left;
+  
+}
+.h3o {
+  float      : left;
+  
+}
+.h3p {
+  float      : left;
+  
+}
+.h3q {
+  float      : left;
+  
+}
+.h3r {
+  float      : left;
+  
+}
+.h3s {
+  float      : left;
+  
+}
+.h3t {
+  float      : left;
+  
+}
+
+h3 {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 auto;
+  color: darkblue;
+  font-family: 'Eater', 'cursive';
 
 }
 
