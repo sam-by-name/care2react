@@ -9,7 +9,7 @@
   height: 300px;
   text-align: center;
   font-size: 3em;
-  /* margin: 10% auto 0 auto; */
+  margin: 10% auto 0 auto;
   font-family: 'Eater', 'cursive';
   left : 25%;
   position: fixed;
@@ -61,7 +61,7 @@
   height: 300px;
   text-align: center;
   font-size: 2em;
-  /* margin: 10% auto 0 auto; */
+  margin: 20% auto 0 auto;
   font-family: 'Eater', 'cursive';
   left : 20%;
   position: fixed;
@@ -69,12 +69,13 @@
 }
 
 .h3a {
-  float      : left;
-  color      : darkred;
+  float         : left;
+  color         : darkred;
+  margin-right  : 20px;
 }
 .h3b {
-  float      : left;
-  color      : rgb(161, 7, 7);
+  float         : left;
+  color         : rgb(161, 7, 7);
 }
 .h3c {
   float      : left;
@@ -103,6 +104,7 @@
 .h3i {
   float      : left;
   color      : rgb(94, 255, 0);
+  margin-right  : 20px;
 }
 .h3j {
   float      : left;
@@ -111,39 +113,130 @@
 
 .h3l {
   float      : left;
-  
+  color      : rgb(0, 255, 34);
 }
 .h3m {
   float      : left;
-  
+  color      : rgb(0, 255, 34);
 }
 .h3n {
   float      : left;
-  
+  color      : rgb(0, 255, 34);
 }
 .h3o {
   float      : left;
-  
+  color      : rgb(0, 255, 34);
 }
 .h3p {
   float      : left;
-  
+  color      : rgb(0, 255, 34);
 }
 .h3q {
   float      : left;
-  
+  color      : rgb(0, 255, 34);
 }
 .h3r {
   float      : left;
-  
+  color      : rgb(0, 255, 34);
 }
 .h3s {
   float      : left;
-  
+  color      : rgb(0, 255, 34);
 }
 .h3t {
   float      : left;
-  
+  color      : rgb(0, 255, 34);
+}
+
+.signedTit {
+  height: 300px;
+  text-align: center;
+  font-size: 1em;
+  margin: 35% auto 0 auto;
+  font-family: 'Eater', 'cursive';
+  left : 15%;
+  position: fixed;
+  float: left;
+}
+
+.h3a {
+  float         : left;
+  color         : darkred;
+  margin-right  : 20px;
+}
+.h3b {
+  float         : left;
+  color         : rgb(161, 7, 7);
+}
+.h3c {
+  float         : left;
+  color         : rgb(209, 7, 7);
+}
+.h3d {
+  float         : left;
+  color         : rgb(248, 7, 7);
+}
+.h3e {
+  float         : left;
+  color         : rgb(252, 92, 0);
+}
+.h3f {
+  float         : left;
+  color         : rgb(250, 142, 0);
+}
+.h3g {
+  float         : left;
+  color         : rgb(247, 190, 4);
+}
+.h3h {
+  float         : left;
+  color         : rgb(238, 255, 0);
+}
+.h3i {
+  float         : left;
+  color         : rgb(94, 255, 0);
+  margin-right  : 20px;
+}
+.h3j {
+  float         : left;
+  color         : rgb(0, 255, 34);
+}
+
+.h3l {
+  float         : left;
+  color         : rgb(0, 255, 34);
+}
+.h3m {
+  float         : left;
+  color         : rgb(0, 255, 34);
+}
+.h3n {
+  float         : left;
+  color         : rgb(0, 255, 34);
+}
+.h3o {
+  float         : left;
+  color         : rgb(0, 255, 34);
+}
+.h3p {
+  float         : left;
+  color         : rgb(0, 255, 34);
+}
+.h3q {
+  float         : left;
+  color         : rgb(0, 255, 34);
+}
+.h3r {
+  float         : left;
+  color         : rgb(0, 255, 34);
+}
+.h3s {
+  float         : left;
+  color         : rgb(0, 255, 34);
+}
+.h3t {
+  float         : left;
+  color         : rgb(0, 255, 34);
 }
 
 h3 {
