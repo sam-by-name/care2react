@@ -31,7 +31,7 @@ class Header extends React.Component {
           <div className='h1g'><h1>e</h1></div>
           <div className='h1h'><h1>a</h1></div>
           <div className='h1i'><h1>c</h1></div>
-          <div className='h1j'><h1>t</h1></div>
+          <Link to='/terminal'><div className='h1j'><h1>t</h1></div></Link>
         </div>
 
         <div className='subTit'>
