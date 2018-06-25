@@ -19992,7 +19992,7 @@ var App = function (_React$Component) {
         _react2.default.createElement(
           'div',
           { className: 'myBody' },
-          _react2.default.createElement(_Header2.default, null),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _Header2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/shapes', component: _Circle2.default })
         )
       );
@@ -20018,6 +20018,8 @@ Object.defineProperty(exports, "__esModule", {
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(28);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20316,30 +20318,34 @@ var Header = function Header() {
         )
       ),
       _react2.default.createElement(
-        'div',
-        { className: 'h5c' },
+        _reactRouterDom.Link,
+        { to: '/sam' },
         _react2.default.createElement(
-          'h1',
-          null,
-          'S'
-        )
-      ),
-      _react2.default.createElement(
-        'div',
-        { className: 'h5d' },
+          'div',
+          { className: 'h5c' },
+          _react2.default.createElement(
+            'h1',
+            null,
+            'S'
+          )
+        ),
         _react2.default.createElement(
-          'h1',
-          null,
-          'a'
-        )
-      ),
-      _react2.default.createElement(
-        'div',
-        { className: 'h5e' },
+          'div',
+          { className: 'h5d' },
+          _react2.default.createElement(
+            'h1',
+            null,
+            'a'
+          )
+        ),
         _react2.default.createElement(
-          'h1',
-          null,
-          'm'
+          'div',
+          { className: 'h5e' },
+          _react2.default.createElement(
+            'h1',
+            null,
+            'm'
+          )
         )
       ),
       _react2.default.createElement(
@@ -20488,7 +20494,7 @@ var Circles = function Circles() {
 
   return _react2.default.createElement(
     _reactRouterDom.HashRouter,
-    { to: '/shapes' },
+    { to: '/' },
     _react2.default.createElement(
       'svg',
       { className: 'shapeBody', width: width, height: height },

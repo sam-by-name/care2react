@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Eater');
+@import url('https://fonts.googleapis.com/css?family=Eater|Indie+Flower'); 
 
 #care2React {
   margin: 0 !important;
@@ -153,7 +153,7 @@
   text-align: center;
   font-size: 1em;
   margin: 35% auto 0 auto;
-  font-family: 'Eater', 'cursive';
+  font-family: 'Indie Flower', 'cursive';
   left : 35%;
   position: fixed;
   float: left;

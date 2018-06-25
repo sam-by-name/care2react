@@ -22,7 +22,7 @@ class App extends React.Component {
     return (
       <Router>
         <div className="myBody">
-          <Header />
+          <Route path='/' component={Header} />
           <Route path='/shapes' component={Shapes} />
         </div>
       </Router>

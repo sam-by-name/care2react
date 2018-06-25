@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -44,9 +45,11 @@ const Header = () => {
         <div className='h5a'><h1>B</h1></div>
         <div className='h5b'><h1>y</h1></div>
 
-        <div className='h5c'><h1>S</h1></div>
-        <div className='h5d'><h1>a</h1></div>
-        <div className='h5e'><h1>m</h1></div>
+        <Link to='/sam'>
+          <div className='h5c'><h1>S</h1></div>
+          <div className='h5d'><h1>a</h1></div>
+          <div className='h5e'><h1>m</h1></div>
+        </Link>
         <div className='h5f'><h1>.</h1></div>
         <div className='h5g'><h1>L</h1></div>
         <div className='h5h'><h1>.</h1></div>
