@@ -1,5 +1,6 @@
 import React from 'react'
 // import BabyTriangles from './BabyTriangles'
+import {HashRouter as Link} from 'react-router-dom'
 
 const Circles = () => {
   const width = window.innerWidth
@@ -21,10 +22,22 @@ const Circles = () => {
     position: 'absolute'
   }
 
+  let triStyle = {
+    fill: 'lime',
+    stroke: 'purple',
+    strokeWidth: '5',
+    fillRule: 'evenodd',
+    position: 'absolute',
+    zIndex: '100'
+  }
+
   return (
-    <svg className='shapeBody' width={width} height={height}>
-      <circle cx={triangles.width} cy={triangles.height} r={triangles.r} style={circStyle} />
-    </svg>
+    <Link to='/shapes'>
+      <svg className='shapeBody' width={width} height={height}>
+        <polygon points='100, 10 40,198 190,78 10,78 160, 198' style={triStyle} />
+        <circle cx={triangles.width} cy={triangles.height} r={triangles.r} style={circStyle} />
+      </svg>
+    </Link>
   )
 }
 

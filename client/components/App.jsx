@@ -1,7 +1,9 @@
 import React from 'react'
 import Header from './Header'
-import TriForce from './TriForce'
-// import Circle from './Circle'
+// import TriForce from './TriForce'
+import Shapes from './Circle'
+
+import {HashRouter as Router, Route} from 'react-router-dom'
 
 class App extends React.Component {
   constructor (props) {
@@ -18,11 +20,12 @@ class App extends React.Component {
 
   render () {
     return (
-      <div className="myBody">
-        <Header />
-        <TriForce />
-        {/* <Circle /> */}
-      </div>
+      <Router>
+        <div className="myBody">
+          <Header />
+          <Route path='/shapes' component={Shapes} />
+        </div>
+      </Router>
     )
   }
 }

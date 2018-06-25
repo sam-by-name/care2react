@@ -18287,9 +18287,11 @@ var _Header = __webpack_require__(28);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _TriForce = __webpack_require__(29);
+var _Circle = __webpack_require__(30);
 
-var _TriForce2 = _interopRequireDefault(_TriForce);
+var _Circle2 = _interopRequireDefault(_Circle);
+
+var _reactRouterDom = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react-router-dom\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18298,8 +18300,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+// import TriForce from './TriForce'
 
-// import Circle from './Circle'
 
 var App = function (_React$Component) {
   _inherits(App, _React$Component);
@@ -18323,10 +18325,14 @@ var App = function (_React$Component) {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        'div',
-        { className: 'myBody' },
-        _react2.default.createElement(_Header2.default, null),
-        _react2.default.createElement(_TriForce2.default, null)
+        _reactRouterDom.HashRouter,
+        null,
+        _react2.default.createElement(
+          'div',
+          { className: 'myBody' },
+          _react2.default.createElement(_Header2.default, null),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/shapes', component: _Circle2.default })
+        )
       );
     }
   }]);
@@ -18373,7 +18379,8 @@ var Header = function Header() {
 exports.default = Header;
 
 /***/ }),
-/* 29 */
+/* 29 */,
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18387,11 +18394,11 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react-router-dom\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import BabyTriangles from './BabyTriangles'
-
-var TriForce = function TriForce() {
+var Circles = function Circles() {
   var width = window.innerWidth;
   var height = window.innerHeight;
   // const width = 1893
@@ -18403,14 +18410,6 @@ var TriForce = function TriForce() {
     r: 256
   };
 
-  var triStyle = {
-    fill: 'lime',
-    stroke: 'purple',
-    strokeWidth: '5',
-    fillRule: 'evenodd',
-    position: 'absolute',
-    zIndex: '100'
-  };
   var circStyle = {
     fill: 'black',
     stroke: 'blue',
@@ -18419,15 +18418,28 @@ var TriForce = function TriForce() {
     position: 'absolute'
   };
 
+  var triStyle = {
+    fill: 'lime',
+    stroke: 'purple',
+    strokeWidth: '5',
+    fillRule: 'evenodd',
+    position: 'absolute',
+    zIndex: '100'
+  };
+
   return _react2.default.createElement(
-    'svg',
-    { className: 'shapeBody', viewBox: '0 0 ' + width + ' ' + height },
-    _react2.default.createElement('polygon', { points: '100, 10 40,198 190,78 10,78 160, 198', style: triStyle }),
-    _react2.default.createElement('circle', { cx: triangles.width, cy: triangles.height, r: triangles.r, style: circStyle })
+    _reactRouterDom.HashRouter,
+    { to: '/shapes' },
+    _react2.default.createElement(
+      'svg',
+      { className: 'shapeBody', width: width, height: height },
+      _react2.default.createElement('polygon', { points: '100, 10 40,198 190,78 10,78 160, 198', style: triStyle }),
+      _react2.default.createElement('circle', { cx: triangles.width, cy: triangles.height, r: triangles.r, style: circStyle })
+    )
   );
 };
-// onMouseOver={BabyTriangles}
-exports.default = TriForce;
+// import BabyTriangles from './BabyTriangles'
+exports.default = Circles;
 
 /***/ })
 /******/ ]);
