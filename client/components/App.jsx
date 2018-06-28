@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
 // import TriForce from './TriForce'
-import Shapes from './Circle'
+import Shapes from './shapes'
 import Terminal from './Terminal'
 
 import {HashRouter as Router, Route} from 'react-router-dom'

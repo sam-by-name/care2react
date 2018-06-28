@@ -8,7 +8,7 @@
 .mainTit {
   height: 300px;
   text-align: center;
-  font-size: 3em;
+  font-size: 2.8vw;
   margin: 10% auto 0 auto;
   font-family: 'Eater', 'cursive';
   left : 25%;
@@ -18,7 +18,7 @@
 
 .h1a {
   float      : left;
-  color      : darkred;
+  /* color      : darkred; */
 }
 .h1b {
   float      : left;
@@ -60,7 +60,7 @@
 .subTit {
   height: 300px;
   text-align: center;
-  font-size: 2em;
+  font-size: 2vw;
   margin: 20% auto 0 auto;
   font-family: 'Eater', 'cursive';
   left : 20%;
@@ -151,7 +151,7 @@
 .signedTit {
   height: 300px;
   text-align: center;
-  font-size: 1em;
+  font-size: 1vw;
   margin: 35% auto 0 auto;
   font-family: 'Indie Flower', 'cursive';
   left : 35%;

@@ -19949,9 +19949,9 @@ var _Header = __webpack_require__(49);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Circle = __webpack_require__(80);
+var _shapes = __webpack_require__(80);
 
-var _Circle2 = _interopRequireDefault(_Circle);
+var _shapes2 = _interopRequireDefault(_shapes);
 
 var _Terminal = __webpack_require__(81);
 
@@ -19998,7 +19998,7 @@ var App = function (_React$Component) {
           { className: 'myBody' },
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Header2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/terminal', component: _Terminal2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/shapes', component: _Circle2.default })
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/shapes', component: _shapes2.default })
         )
       );
     }
@@ -20045,7 +20045,9 @@ var Header = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
 
     _this.state = {
-      color: ['#0040FF', '#0041FF', '#0042FF', '#0043FF']
+      count: 0,
+      style: {},
+      letterHovered: false
     };
     _this.changeColor = _this.changeColor.bind(_this);
     return _this;
@@ -20055,7 +20057,11 @@ var Header = function (_React$Component) {
     key: 'changeColor',
     value: function changeColor() {
       this.setState({
-        color: this.state.color[0] + 1
+        count: +1,
+        style: {
+          color: [this.state.count]
+        },
+        letterHovered: true
       });
     }
 
@@ -20066,6 +20072,10 @@ var Header = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
+      var arrColor = ['red', 'blue', 'green', 'yellow'];
+      this.style = {
+        color: arrColor[this.state.count]
+      };
       return _react2.default.createElement(
         'div',
         null,
@@ -20074,7 +20084,7 @@ var Header = function (_React$Component) {
           { className: 'mainTit' },
           _react2.default.createElement(
             'div',
-            { className: 'h1a', onMouseOver: this.changeColor },
+            { className: 'h1a', onMouseOver: this.changeColor, style: this.style },
             _react2.default.createElement(
               'h1',
               null,
@@ -20422,12 +20432,16 @@ var Header = function (_React$Component) {
             )
           ),
           _react2.default.createElement(
-            'div',
-            { className: 'h5i' },
+            _reactRouterDom.Link,
+            { to: '/shapes' },
             _react2.default.createElement(
-              'h1',
-              null,
-              'S'
+              'div',
+              { className: 'h5i' },
+              _react2.default.createElement(
+                'h1',
+                null,
+                'S'
+              )
             )
           ),
           _react2.default.createElement(

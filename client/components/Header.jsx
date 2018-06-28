@@ -5,13 +5,20 @@ class Header extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      color: ['#0040FF', '#0041FF', '#0042FF', '#0043FF']
+      count: 0,
+      style: {},
+      letterHovered: false
     }
     this.changeColor = this.changeColor.bind(this)
   }
+
   changeColor () {
     this.setState({
-      color: this.state.color[0] + 1
+      count: +1,
+      style: {
+        color: [this.state.count]
+      },
+      letterHovered: true
     })
   }
 
@@ -19,10 +26,14 @@ class Header extends React.Component {
   //   style: red;
   // }
   render () {
+    const arrColor = ['red', 'blue', 'green', 'yellow']
+    this.style = {
+      color: arrColor[this.state.count]
+    }
     return (
       <div>
         <div className='mainTit'>
-          <div className='h1a' onMouseOver={this.changeColor}><h1>C</h1></div>
+          <div className='h1a' onMouseOver={this.changeColor} style={this.style}><h1>C</h1></div>
           <div className='h1b'><h1>a</h1></div>
           <div className='h1c'><h1>r</h1></div>
           <div className='h1d'><h1>e</h1></div>
@@ -70,7 +81,7 @@ class Header extends React.Component {
           <div className='h5f'><h1>.</h1></div>
           <div className='h5g'><h1>L</h1></div>
           <div className='h5h'><h1>.</h1></div>
-          <div className='h5i'><h1>S</h1></div>
+          <Link to='/shapes'><div className='h5i'><h1>S</h1></div></Link>
           <div className='h5j'><h1>a</h1></div>
           <div className='h5k'><h1>n</h1></div>
           <div className='h5l'><h1>d</h1></div>
