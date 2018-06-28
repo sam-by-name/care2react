@@ -19949,11 +19949,11 @@ var _Header = __webpack_require__(49);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _shapes = __webpack_require__(80);
+var _shapes = __webpack_require__(81);
 
 var _shapes2 = _interopRequireDefault(_shapes);
 
-var _Terminal = __webpack_require__(81);
+var _Terminal = __webpack_require__(82);
 
 var _Terminal2 = _interopRequireDefault(_Terminal);
 
@@ -20028,6 +20028,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(15);
 
+var _colors = __webpack_require__(80);
+
+var _colors2 = _interopRequireDefault(_colors);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20056,25 +20060,20 @@ var Header = function (_React$Component) {
   _createClass(Header, [{
     key: 'changeColor',
     value: function changeColor() {
+      var rando = Math.floor(Math.random() * 10);
       this.setState({
-        count: +1,
+        count: rando,
         style: {
           color: [this.state.count]
         },
         letterHovered: true
       });
     }
-
-    // handleOnMouseOver: function(e) {
-    //   style: red;
-    // }
-
   }, {
     key: 'render',
     value: function render() {
-      var arrColor = ['red', 'blue', 'green', 'yellow'];
       this.style = {
-        color: arrColor[this.state.count]
+        color: _colors2.default[this.state.count]
       };
       return _react2.default.createElement(
         'div',
@@ -23869,6 +23868,20 @@ module.exports = hoistNonReactStatics;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+var ArrColors = ['red', 'blue', 'green', 'yellow', '#9acd32', '#663399', '#f5f5f5', '#f5deb3', '#ee82ee', '#40e0d0', '#ff6347', '#d8bfd8', '#d2b48c', '#4682b4', '#00ff7f', '#fffafa', '#708090', '#87ceeb', '#6a5acd', '#a0522d', '#fff5ee', '#2e8b57', '#f4a460', '#fa8072', '#8b4513', '#4169e1', '#bc8f8f', '#b0e0e6', '#dda0dd', '#ffc0cb', '#cd853f', '#ffdab9', '#ffefd5', '#db7093', '#afeeee', '#98fb98', '#eee8aa', '#da70d6', '#ff4500', '#6b8e23', '#fdf5e6', '#ffdead', '#ffe4b5', '#ffe4e1', '#f5fffa', '#191970', '#c71585', '#48d1cc', '#00fa9a', '#7b68ee', '#3cb371', '#9370db'];
+
+exports.default = ArrColors;
+
+/***/ }),
+/* 81 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
 var _react = __webpack_require__(0);
 
@@ -23922,7 +23935,7 @@ var Circles = function Circles() {
 exports.default = Circles;
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

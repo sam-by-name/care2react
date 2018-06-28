@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import ArrColors from './colors'
 
 class Header extends React.Component {
   constructor (props) {
@@ -13,8 +14,9 @@ class Header extends React.Component {
   }
 
   changeColor () {
+    let rando = Math.floor(Math.random() * 10)
     this.setState({
-      count: +1,
+      count: rando,
       style: {
         color: [this.state.count]
       },
@@ -22,13 +24,9 @@ class Header extends React.Component {
     })
   }
 
-  // handleOnMouseOver: function(e) {
-  //   style: red;
-  // }
   render () {
-    const arrColor = ['red', 'blue', 'green', 'yellow']
     this.style = {
-      color: arrColor[this.state.count]
+      color: ArrColors[this.state.count]
     }
     return (
       <div>
