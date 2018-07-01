@@ -20060,7 +20060,7 @@ var Header = function (_React$Component) {
   _createClass(Header, [{
     key: 'changeColor',
     value: function changeColor() {
-      var rando = Math.floor(Math.random() * 10);
+      var rando = Math.floor(Math.random() * 20);
       this.setState({
         count: rando,
         style: {
@@ -23986,14 +23986,21 @@ var Terminal = function (_React$Component) {
       };
       var matrix = {
         backgroundColor: 'black',
-        width: '100%',
-        height: '100%',
-        color: 'limeGreen'
+        width: '80%',
+        height: '80%',
+        color: 'limeGreen',
+        border: 'none',
+        margin: '10% 10%',
+        resize: 'none'
       };
       return _react2.default.createElement(
         'div',
-        { style: box },
-        _react2.default.createElement('textarea', { style: matrix })
+        null,
+        _react2.default.createElement(
+          'div',
+          { style: box },
+          _react2.default.createElement('textarea', { id: 'aITalks', style: matrix })
+        )
       );
     }
   }]);

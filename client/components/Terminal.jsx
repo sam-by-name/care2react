@@ -9,6 +9,8 @@ class Terminal extends React.Component {
     }
   }
 
+  
+
   render () {
     let box = {
       width: '80%',
@@ -20,12 +22,20 @@ class Terminal extends React.Component {
     }
     let matrix = {
       backgroundColor: 'black',
-      width: '100%',
-      height: '100%',
-      color: 'limeGreen'
+      width: '80%',
+      height: '80%',
+      color: 'limeGreen',
+      border: 'none',
+      margin: '10% 10%',
+      resize: 'none'
     }
     return (
-      <div style={box}><textarea style={matrix}></textarea></div>
+      <div>
+        <div style={box}>
+          <textarea id='aITalks' style={matrix}>
+          </textarea>
+        </div>
+      </div>
     )
   }
 }

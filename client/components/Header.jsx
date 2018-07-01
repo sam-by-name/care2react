@@ -14,7 +14,7 @@ class Header extends React.Component {
   }
 
   changeColor () {
-    let rando = Math.floor(Math.random() * 10)
+    let rando = Math.floor(Math.random() * 20)
     this.setState({
       count: rando,
       style: {
