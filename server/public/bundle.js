@@ -23905,11 +23905,10 @@ var Shapes = function Shapes() {
   var circSpace = {
     cx: width / 2,
     cy: height / 2,
-    r: 25.6
+    r: 50
   };
 
   var circStyle = {
-    // fill: 'black',
     stroke: 'blue',
     strokeWidth: '5',
     fillRule: 'evenodd',
@@ -23989,8 +23988,10 @@ var Circle = function (_React$Component) {
     _this.state = {
       babiesL: [],
       countL: 0,
+      moveL: 0,
       babiesR: [],
-      countR: 52
+      countR: 51,
+      moveR: 0
     };
     _this.multiplyL = _this.multiplyL.bind(_this, props.circSpace);
     _this.multiplyR = _this.multiplyR.bind(_this, props.circSpace);
@@ -24002,23 +24003,35 @@ var Circle = function (_React$Component) {
     value: function multiplyL(circSpace) {
       var _this2 = this;
 
-      var babiesL = [];
-      var cx = circSpace.cx,
-          cy = circSpace.cy,
-          r = circSpace.r;
+      if (this.state.countL % 2) {
+        var babiesL = [];
+        var cx = circSpace.cx,
+            cy = circSpace.cy,
+            r = circSpace.r;
 
+        babiesL.push({ cx: cx + this.state.moveL, cy: cy + this.state.moveL, r: r });
+        setTimeout(function () {
+          _this2.moreCircsL(babiesL);
+        }, 50);
+      } else {
+        var _babiesL = [];
+        var _cx = circSpace.cx,
+            _cy = circSpace.cy,
+            _r = circSpace.r;
 
-      babiesL.push({ cx: cx - 10, cy: cy + 10, r: r });
-      setTimeout(function () {
-        _this2.moreCircsL(babiesL);
-      }, 50);
+        _babiesL.push({ cx: _cx - this.state.moveL, cy: _cy - this.state.moveL, r: _r });
+        setTimeout(function () {
+          _this2.moreCircsL(_babiesL);
+        }, 50);
+      }
     }
   }, {
     key: 'moreCircsL',
     value: function moreCircsL(babiesL) {
       this.setState({
         babiesL: babiesL,
-        countL: this.state.countL + 1
+        countL: this.state.countL + 1,
+        moveL: this.state.moveL + 10
       });
     }
   }, {
@@ -24032,7 +24045,7 @@ var Circle = function (_React$Component) {
           r = circSpace.r;
 
 
-      babiesR.push({ cx: cx + 100, cy: cy - 100, r: r });
+      babiesR.push({ cx: cx + this.state.moveR, cy: cy, r: r });
       setTimeout(function () {
         _this3.moreCircsR(babiesR);
       }, 50);
@@ -24042,7 +24055,8 @@ var Circle = function (_React$Component) {
     value: function moreCircsR(babiesR) {
       this.setState({
         babiesR: babiesR,
-        countR: this.state.countR - 1
+        countR: this.state.countR - 1,
+        moveR: this.state.moveR + 10
       });
     }
   }, {
@@ -24058,13 +24072,13 @@ var Circle = function (_React$Component) {
       return _react2.default.createElement(
         'g',
         null,
-        _react2.default.createElement('circle', { cx: cx - 25, cy: cy, r: r, fill: _colors2.default[this.state.countL], style: this.props.circStyle, onMouseOver: this.multiplyL }),
+        _react2.default.createElement('circle', { cx: cx, cy: cy, r: r, fill: _colors2.default[this.state.countL], style: this.props.circStyle, onKeyDown: this.multiplyL, onMouseOut: this.multiplyL, onMouseOver: this.multiplyL }),
         this.state.babiesL.map(function (circSpace, i) {
           return _react2.default.createElement(Circle, { key: i, fill: _colors2.default[_this4.state.countL], circSpace: circSpace });
         }),
-        _react2.default.createElement('circle', { cx: cx, cy: cy + 25, r: r, fill: _colors2.default[this.state.countR], style: this.props.circStyle, onMouseOver: this.multiplyR }),
+        _react2.default.createElement('circle', { cx: cx - 500, cy: cy, r: r, fill: _colors2.default[this.state.countR], style: this.props.circStyle, onMouseOut: this.multiplyL, onMouseOver: this.multiplyR }),
         this.state.babiesR.map(function (circSpace, i) {
-          return _react2.default.createElement(Circle, { key: i, fill: _colors2.default[_this4.state.countL], circSpace: circSpace });
+          return _react2.default.createElement(Circle, { key: i, fill: _colors2.default[_this4.state.countR], circSpace: circSpace });
         })
       );
     }

@@ -13,11 +13,10 @@ const Shapes = () => {
   const circSpace = {
     cx: width / 2,
     cy: height / 2,
-    r: 25.6
+    r: 50
   }
 
   let circStyle = {
-    // fill: 'black',
     stroke: 'blue',
     strokeWidth: '5',
     fillRule: 'evenodd',

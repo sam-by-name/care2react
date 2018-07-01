@@ -7,26 +7,37 @@ class Circle extends React.Component {
     this.state = {
       babiesL: [],
       countL: 0,
+      moveL: 0,
       babiesR: [],
-      countR: 52
+      countR: 51,
+      moveR: 0
     }
     this.multiplyL = this.multiplyL.bind(this, props.circSpace)
     this.multiplyR = this.multiplyR.bind(this, props.circSpace)
   }
   multiplyL (circSpace) {
-    const babiesL = []
-    const {cx, cy, r} = circSpace
-
-    babiesL.push(
-      {cx: cx - 10, cy: cy + 10, r: r}
-    )
-    setTimeout(() => { this.moreCircsL(babiesL) }, 50)
+    if (this.state.countL % 2) {
+      const babiesL = []
+      const {cx, cy, r} = circSpace
+      babiesL.push(
+        {cx: cx + this.state.moveL, cy: cy + this.state.moveL, r: r}
+      )
+      setTimeout(() => { this.moreCircsL(babiesL) }, 50)
+    } else {
+      const babiesL = []
+      const {cx, cy, r} = circSpace
+      babiesL.push(
+        {cx: cx - this.state.moveL, cy: cy - this.state.moveL, r: r}
+      )
+      setTimeout(() => { this.moreCircsL(babiesL) }, 50)
+    }
   }
 
   moreCircsL (babiesL) {
     this.setState({
       babiesL,
-      countL: this.state.countL + 1
+      countL: this.state.countL + 1,
+      moveL: this.state.moveL + 10
     })
   }
 
@@ -35,7 +46,7 @@ class Circle extends React.Component {
     const {cx, cy, r} = circSpace
 
     babiesR.push(
-      {cx: cx + 100, cy: cy - 100, r: r}
+      {cx: cx + this.state.moveR, cy: cy, r: r}
     )
     setTimeout(() => { this.moreCircsR(babiesR) }, 50)
   }
@@ -43,7 +54,8 @@ class Circle extends React.Component {
   moreCircsR (babiesR) {
     this.setState({
       babiesR,
-      countR: this.state.countR - 1
+      countR: this.state.countR - 1,
+      moveR: this.state.moveR + 10
     })
   }
 
@@ -51,13 +63,13 @@ class Circle extends React.Component {
     const {cx, cy, r} = this.props.circSpace
     return (
       <g>
-        <circle cx={cx - 25} cy={cy} r={r} fill={ArrColors[this.state.countL]} style={this.props.circStyle} onMouseOver={this.multiplyL} />
+        <circle cx={cx} cy={cy} r={r} fill={ArrColors[this.state.countL]} style={this.props.circStyle} onKeyDown={this.multiplyL} onMouseOut={this.multiplyL} onMouseOver={this.multiplyL} />
         {this.state.babiesL.map((circSpace, i) => {
           return <Circle key={i} fill={ArrColors[this.state.countL]} circSpace={circSpace} />
         })}
-        <circle cx={cx} cy={cy + 25} r={r} fill={ArrColors[this.state.countR]} style={this.props.circStyle} onMouseOver={this.multiplyR} />
+        <circle cx={cx - 500} cy={cy} r={r} fill={ArrColors[this.state.countR]} style={this.props.circStyle} onMouseOut={this.multiplyL} onMouseOver={this.multiplyR} />
         {this.state.babiesR.map((circSpace, i) => {
-          return <Circle key={i} fill={ArrColors[this.state.countL]} circSpace={circSpace} />
+          return <Circle key={i} fill={ArrColors[this.state.countR]} circSpace={circSpace} />
         })}
       </g>
     )
