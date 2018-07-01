@@ -17,7 +17,7 @@ const Shapes = () => {
   }
 
   let circStyle = {
-    fill: 'black',
+    // fill: 'black',
     stroke: 'blue',
     strokeWidth: '5',
     fillRule: 'evenodd',
