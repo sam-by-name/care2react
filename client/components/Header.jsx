@@ -79,7 +79,7 @@ class Header extends React.Component {
           <div className='h5f' onMouseOver={this.changeColor} style={this.style}><h1>.</h1></div>
           <div className='h5g' onMouseOver={this.changeColor} style={this.style}><h1>L</h1></div>
           <div className='h5h' onMouseOver={this.changeColor} style={this.style}><h1>.</h1></div>
-          <Link to='/shapes'><div className='h5i' onMouseOver={this.changeColor} style={this.style}><h1>S</h1></div></Link>
+          <Link to='/Shapes'><div className='h5i' onMouseOver={this.changeColor} style={this.style}><h1>S</h1></div></Link>
           <div className='h5j' onMouseOver={this.changeColor} style={this.style}><h1>a</h1></div>
           <div className='h5k' onMouseOver={this.changeColor} style={this.style}><h1>n</h1></div>
           <div className='h5l' onMouseOver={this.changeColor} style={this.style}><h1>d</h1></div>

@@ -19949,9 +19949,9 @@ var _Header = __webpack_require__(49);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _shapes = __webpack_require__(81);
+var _Shapes = __webpack_require__(84);
 
-var _shapes2 = _interopRequireDefault(_shapes);
+var _Shapes2 = _interopRequireDefault(_Shapes);
 
 var _Terminal = __webpack_require__(82);
 
@@ -19998,7 +19998,7 @@ var App = function (_React$Component) {
           { className: 'myBody' },
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Header2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/terminal', component: _Terminal2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/shapes', component: _shapes2.default })
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/Shapes', component: _Shapes2.default })
         )
       );
     }
@@ -20432,7 +20432,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             _reactRouterDom.Link,
-            { to: '/shapes' },
+            { to: '/Shapes' },
             _react2.default.createElement(
               'div',
               { className: 'h5i', onMouseOver: this.changeColor, style: this.style },
@@ -23873,68 +23873,7 @@ var ArrColors = ['red', 'blue', 'green', 'yellow', '#9acd32', '#663399', '#f5f5f
 exports.default = ArrColors;
 
 /***/ }),
-/* 81 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouterDom = __webpack_require__(15);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Circles = function Circles() {
-  var width = window.innerWidth;
-  var height = window.innerHeight;
-  // const width = 1893
-  // const height = 962
-
-  var triangles = {
-    width: width / 2,
-    height: height / 2,
-    r: 256
-  };
-
-  var circStyle = {
-    fill: 'black',
-    stroke: 'blue',
-    strokeWidth: '5',
-    fillRule: 'evenodd',
-    position: 'absolute'
-  };
-
-  var triStyle = {
-    fill: 'lime',
-    stroke: 'purple',
-    strokeWidth: '5',
-    fillRule: 'evenodd',
-    position: 'absolute',
-    zIndex: '100'
-  };
-
-  return _react2.default.createElement(
-    _reactRouterDom.HashRouter,
-    { to: '/' },
-    _react2.default.createElement(
-      'svg',
-      { className: 'shapeBody', width: width, height: height },
-      _react2.default.createElement('polygon', { points: '100, 10 40,198 190,78 10,78 160, 198', style: triStyle }),
-      _react2.default.createElement('circle', { cx: triangles.width, cy: triangles.height, r: triangles.r, style: circStyle })
-    )
-  );
-};
-// import BabyTriangles from './BabyTriangles'
-exports.default = Circles;
-
-/***/ }),
+/* 81 */,
 /* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23960,6 +23899,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 // import {Link} from 'react-router-dom'
+// import String from './string'
 
 var Terminal = function (_React$Component) {
   _inherits(Terminal, _React$Component);
@@ -24009,6 +23949,200 @@ var Terminal = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Terminal;
+
+/***/ }),
+/* 83 */,
+/* 84 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(15);
+
+var _Circle = __webpack_require__(85);
+
+var _Circle2 = _interopRequireDefault(_Circle);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import BabyTriangles from './BabyTriangles'
+var Shapes = function Shapes() {
+  var width = window.innerWidth;
+  var height = window.innerHeight;
+  // const width = 1893
+  // const height = 962
+
+  var circSpace = {
+    cx: width / 2,
+    cy: height / 2,
+    r: 25.6
+  };
+
+  var circStyle = {
+    fill: 'black',
+    stroke: 'blue',
+    strokeWidth: '5',
+    fillRule: 'evenodd',
+    position: 'absolute'
+
+    // let triStyle = {
+    //   fill: 'lime',
+    //   stroke: 'purple',
+    //   strokeWidth: '5',
+    //   fillRule: 'evenodd',
+    //   position: 'absolute',
+    //   zIndex: '100'
+    // }
+    // let points = {
+    //   a: 100,
+    //   b: 10,
+    //   c: 40,
+    //   d: 198,
+    //   e: 190,
+    //   f: 78,
+    //   g: 10,
+    //   h: 78,
+    //   i: 160,
+    //   j: 198
+    // }
+
+  };return _react2.default.createElement(
+    _reactRouterDom.HashRouter,
+    { to: '/' },
+    _react2.default.createElement(
+      'svg',
+      { className: 'shapeBody', width: width, height: height },
+      _react2.default.createElement(_Circle2.default, { circStyle: circStyle, circSpace: circSpace })
+    )
+  );
+};
+// import Tri from './Tri'
+exports.default = Shapes;
+
+/***/ }),
+/* 85 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Circle = function (_React$Component) {
+  _inherits(Circle, _React$Component);
+
+  function Circle(props) {
+    _classCallCheck(this, Circle);
+
+    var _this = _possibleConstructorReturn(this, (Circle.__proto__ || Object.getPrototypeOf(Circle)).call(this, props));
+
+    _this.state = {
+      babiesL: [],
+      babiesR: []
+    };
+    _this.multiplyL = _this.multiplyL.bind(_this, props.circSpace);
+    _this.multiplyR = _this.multiplyR.bind(_this, props.circSpace);
+    return _this;
+  }
+
+  _createClass(Circle, [{
+    key: 'multiplyL',
+    value: function multiplyL(circSpace) {
+      var _this2 = this;
+
+      var babiesL = [];
+      var cx = circSpace.cx,
+          cy = circSpace.cy,
+          r = circSpace.r;
+
+
+      babiesL.push({ cx: cx - 10, cy: cy + 10, r: r });
+      setTimeout(function () {
+        _this2.moreCircsL(babiesL);
+      }, 50);
+    }
+  }, {
+    key: 'moreCircsL',
+    value: function moreCircsL(babiesL) {
+      this.setState({
+        babiesL: babiesL
+      });
+    }
+  }, {
+    key: 'multiplyR',
+    value: function multiplyR(circSpace) {
+      var _this3 = this;
+
+      var babiesR = [];
+      var cx = circSpace.cx,
+          cy = circSpace.cy,
+          r = circSpace.r;
+
+
+      babiesR.push({ cx: cx + 10, cy: cy - 10, r: r });
+      setTimeout(function () {
+        _this3.moreCircsR(babiesR);
+      }, 50);
+    }
+  }, {
+    key: 'moreCircsR',
+    value: function moreCircsR(babiesR) {
+      this.setState({
+        babiesR: babiesR
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _props$circSpace = this.props.circSpace,
+          cx = _props$circSpace.cx,
+          cy = _props$circSpace.cy,
+          r = _props$circSpace.r;
+
+      return _react2.default.createElement(
+        'g',
+        null,
+        _react2.default.createElement('circle', { cx: cx - 25, cy: cy, r: r, style: this.props.circStyle, onMouseOver: this.multiplyL }),
+        this.state.babiesL.map(function (circSpace, i) {
+          return _react2.default.createElement(Circle, { key: i, circSpace: circSpace });
+        }),
+        _react2.default.createElement('circle', { cx: cx, cy: cy + 25, r: r, style: this.props.circStyle, onMouseOver: this.multiplyR }),
+        this.state.babiesR.map(function (circSpace, i) {
+          return _react2.default.createElement(Circle, { key: i, circSpace: circSpace });
+        })
+      );
+    }
+  }]);
+
+  return Circle;
+}(_react2.default.Component);
+
+exports.default = Circle;
 
 /***/ })
 /******/ ]);

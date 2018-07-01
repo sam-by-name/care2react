@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
 // import TriForce from './TriForce'
-import Shapes from './shapes'
+import Shapes from './Shapes'
 import Terminal from './Terminal'
 
 import {HashRouter as Router, Route} from 'react-router-dom'
@@ -25,7 +25,7 @@ class App extends React.Component {
         <div className="myBody">
           <Route exact path='/' component={Header} />
           <Route path='/terminal' component={Terminal} />
-          <Route path='/shapes' component={Shapes} />
+          <Route path='/Shapes' component={Shapes} />
         </div>
       </Router>
     )
