@@ -1,4 +1,4 @@
-const ArrColors = [
+export const ArrColors = [
   'red',
   'blue',
   'green',
@@ -53,4 +53,18 @@ const ArrColors = [
   '#9370db'
 ]
 
-export default ArrColors
+export const Counters = [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11
+]
+
