@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {ArrColors} from './colors'
+import {Alpha, ArrColors} from './colors'
 
 class Header extends React.Component {
   constructor (props) {
@@ -10,6 +10,8 @@ class Header extends React.Component {
       letterHovered: false
     }
     this.changeColor = this.changeColor.bind(this)
+    // this.warp = this.warp.bind(this)
+    this.transLetter = this.transLetter.bind(this)
   }
 
   changeColor (event) {
@@ -21,12 +23,41 @@ class Header extends React.Component {
     })
   }
 
+  // warp (event) {
+  //   const ranSiz = Math.Floor(Math.random() * 5)
+  //   let target = event.Target
+  //   target.parentElement.style.fontSize = ranSiz+'vw'
+  //   this.setState({
+  //     count: +1,
+  //     letterHovered: true
+  //   })
+  // }
+
+  transLetter (event) {
+    // for (let i = -1; i < Alpha.length; i++) {
+    //   if (event.target.innerHTML == Alpha[i]) {
+    //     return (event.target.innerHTML = Alpha[i])
+    //   }
+    // }
+    // let i = 4
+    // event.target.innerHTML = Alpha[i]
+    let count = Number(event.target.id) + 1
+    if (count === 26) {
+      count = 0
+    }
+    event.target.id = count
+    event.target.innerHTML = Alpha[count]
+    this.setState({
+      count: +1
+    })
+  }
+
   render () {
     return (
       <div>
         <div className='mainTit'>
-          <div className='h1a' onMouseOver={this.changeColor}><h1>C</h1></div>
-          <div className='h1b' onMouseOver={this.changeColor}><h1>a</h1></div>
+          <div className='h1a' onMouseOver={this.changeColor} onMouseOut={this.warp}><h1>C</h1></div>
+          <div className='h1b' id='2' onMouseOver={this.changeColor} onClick={this.transLetter}><h1>a</h1></div>
           <div className='h1c' onMouseOver={this.changeColor}><h1>r</h1></div>
           <div className='h1d' onMouseOver={this.changeColor}><h1>e</h1></div>
           <div className='h1e' onMouseOver={this.changeColor}><h1>2</h1></div>

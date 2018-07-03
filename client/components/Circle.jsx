@@ -61,9 +61,9 @@ class Circle extends React.Component {
   }
 
   moveCirc (event) {
-    event.target.cx = Math.floor(Math.random() * 100)
-    event.target.cy = Math.floor(Math.random() * 100)
-    event.target.r = Math.floor(Math.random() * 100)
+    event.target.cx.cx = Math.floor(Math.random() * 100)
+    event.target.cy.cy = Math.floor(Math.random() * 100)
+    event.target.r.r = Math.floor(Math.random() * 100)
   }
 
   render () {

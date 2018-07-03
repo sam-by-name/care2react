@@ -2609,6 +2609,8 @@ var ArrColors = exports.ArrColors = ['red', 'blue', 'green', 'yellow', '#9acd32'
 
 var Counters = exports.Counters = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
+var Alpha = exports.Alpha = ['a', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+
 /***/ }),
 /* 36 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -20065,6 +20067,8 @@ var Header = function (_React$Component) {
       letterHovered: false
     };
     _this.changeColor = _this.changeColor.bind(_this);
+    // this.warp = this.warp.bind(this)
+    _this.transLetter = _this.transLetter.bind(_this);
     return _this;
   }
 
@@ -20078,6 +20082,37 @@ var Header = function (_React$Component) {
         letterHovered: true
       });
     }
+
+    // warp (event) {
+    //   const ranSiz = Math.Floor(Math.random() * 5)
+    //   let target = event.Target
+    //   target.parentElement.style.fontSize = ranSiz+'vw'
+    //   this.setState({
+    //     count: +1,
+    //     letterHovered: true
+    //   })
+    // }
+
+  }, {
+    key: 'transLetter',
+    value: function transLetter(event) {
+      // for (let i = -1; i < Alpha.length; i++) {
+      //   if (event.target.innerHTML == Alpha[i]) {
+      //     return (event.target.innerHTML = Alpha[i])
+      //   }
+      // }
+      // let i = 4
+      // event.target.innerHTML = Alpha[i]
+      var count = Number(event.target.id) + 1;
+      if (count === 26) {
+        count = 0;
+      }
+      event.target.id = count;
+      event.target.innerHTML = _colors.Alpha[count];
+      this.setState({
+        count: +1
+      });
+    }
   }, {
     key: 'render',
     value: function render() {
@@ -20089,7 +20124,7 @@ var Header = function (_React$Component) {
           { className: 'mainTit' },
           _react2.default.createElement(
             'div',
-            { className: 'h1a', onMouseOver: this.changeColor },
+            { className: 'h1a', onMouseOver: this.changeColor, onMouseOut: this.warp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20098,7 +20133,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h1b', onMouseOver: this.changeColor },
+            { className: 'h1b', id: '2', onMouseOver: this.changeColor, onClick: this.transLetter },
             _react2.default.createElement(
               'h1',
               null,
@@ -24055,9 +24090,9 @@ var Circle = function (_React$Component) {
   }, {
     key: 'moveCirc',
     value: function moveCirc(event) {
-      event.target.cx = Math.floor(Math.random() * 100);
-      event.target.cy = Math.floor(Math.random() * 100);
-      event.target.r = Math.floor(Math.random() * 100);
+      event.target.cx.cx = Math.floor(Math.random() * 100);
+      event.target.cy.cy = Math.floor(Math.random() * 100);
+      event.target.r.r = Math.floor(Math.random() * 100);
     }
   }, {
     key: 'render',
