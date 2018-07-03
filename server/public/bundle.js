@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 35);
+/******/ 	return __webpack_require__(__webpack_require__.s = 36);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,9 +71,9 @@
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(36);
-} else {
   module.exports = __webpack_require__(37);
+} else {
+  module.exports = __webpack_require__(38);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -1003,6 +1003,69 @@ module.exports = warning;
 
 /***/ }),
 /* 15 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(51);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(63);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(30);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(64);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(66);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(68);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(70);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(31);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(18);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(72);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(74);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__generatePath__ = __webpack_require__(76);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "generatePath", function() { return __WEBPACK_IMPORTED_MODULE_11__generatePath__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__matchPath__ = __webpack_require__(77);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_12__matchPath__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__withRouter__ = __webpack_require__(78);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_13__withRouter__["a"]; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***/ }),
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1021,7 +1084,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1106,18 +1169,18 @@ var createTransitionManager = function createTransitionManager() {
 /* harmony default export */ __webpack_exports__["a"] = (createTransitionManager);
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Router__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Router__ = __webpack_require__(19);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Router__["a" /* default */]);
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1236,7 +1299,7 @@ Router.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Router);
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1255,7 +1318,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1335,7 +1398,7 @@ var matchPath = function matchPath(pathname) {
 /* harmony default export */ __webpack_exports__["a"] = (matchPath);
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1351,7 +1414,7 @@ var matchPath = function matchPath(pathname) {
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(13);
   var warning = __webpack_require__(14);
-  var ReactPropTypesSecret = __webpack_require__(38);
+  var ReactPropTypesSecret = __webpack_require__(39);
   var loggedTypeFailures = {};
 }
 
@@ -1402,7 +1465,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1441,7 +1504,7 @@ var ExecutionEnvironment = {
 module.exports = ExecutionEnvironment;
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1522,7 +1585,7 @@ module.exports = EventListener;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1564,7 +1627,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 module.exports = getActiveElement;
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1635,7 +1698,7 @@ function shallowEqual(objA, objB) {
 module.exports = shallowEqual;
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1650,7 +1713,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(41);
+var isTextNode = __webpack_require__(42);
 
 /*eslint-disable no-bitwise */
 
@@ -1678,7 +1741,7 @@ function containsNode(outerNode, innerNode) {
 module.exports = containsNode;
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1706,69 +1769,6 @@ function focusNode(node) {
 }
 
 module.exports = focusNode;
-
-/***/ }),
-/* 28 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(51);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(63);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(30);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(64);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(66);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(68);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(70);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(31);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(17);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(72);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(74);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__generatePath__ = __webpack_require__(76);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "generatePath", function() { return __WEBPACK_IMPORTED_MODULE_11__generatePath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__matchPath__ = __webpack_require__(77);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_12__matchPath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__withRouter__ = __webpack_require__(78);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_13__withRouter__["a"]; });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /***/ }),
 /* 29 */
@@ -1977,7 +1977,7 @@ Link.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(21);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2602,15 +2602,29 @@ var generatePath = function generatePath() {
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var ArrColors = exports.ArrColors = ['red', 'blue', 'green', 'yellow', '#9acd32', '#663399', '#f5f5f5', '#f5deb3', '#ee82ee', '#40e0d0', '#ff6347', '#d8bfd8', '#d2b48c', '#4682b4', '#00ff7f', '#fffafa', '#708090', '#87ceeb', '#6a5acd', '#a0522d', '#fff5ee', '#2e8b57', '#f4a460', '#fa8072', '#8b4513', '#4169e1', '#bc8f8f', '#b0e0e6', '#dda0dd', '#ffc0cb', '#cd853f', '#ffdab9', '#ffefd5', '#db7093', '#afeeee', '#98fb98', '#eee8aa', '#da70d6', '#ff4500', '#6b8e23', '#fdf5e6', '#ffdead', '#ffe4b5', '#ffe4e1', '#f5fffa', '#191970', '#c71585', '#48d1cc', '#00fa9a', '#7b68ee', '#3cb371', '#9370db'];
+
+var Counters = exports.Counters = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(39);
+var _reactDom = __webpack_require__(40);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _App = __webpack_require__(48);
+var _App = __webpack_require__(49);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -2621,7 +2635,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2649,7 +2663,7 @@ isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_F
 
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2675,7 +2689,7 @@ var emptyObject = __webpack_require__(9);
 var invariant = __webpack_require__(13);
 var warning = __webpack_require__(14);
 var emptyFunction = __webpack_require__(6);
-var checkPropTypes = __webpack_require__(21);
+var checkPropTypes = __webpack_require__(22);
 
 // TODO: this is special because it gets imported during build.
 
@@ -4014,7 +4028,7 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4033,7 +4047,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4071,15 +4085,15 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(40);
+  module.exports = __webpack_require__(41);
 } else {
-  module.exports = __webpack_require__(43);
+  module.exports = __webpack_require__(44);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4095,7 +4109,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0),l=__webpack_require__(22),B=__webpack_require__(5),C=__webpack_require__(6),ba=__webpack_require__(23),da=__webpack_require__(24),ea=__webpack_require__(25),fa=__webpack_require__(26),ia=__webpack_require__(27),D=__webpack_require__(9);
+var aa=__webpack_require__(0),l=__webpack_require__(23),B=__webpack_require__(5),C=__webpack_require__(6),ba=__webpack_require__(24),da=__webpack_require__(25),ea=__webpack_require__(26),fa=__webpack_require__(27),ia=__webpack_require__(28),D=__webpack_require__(9);
 function E(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:E("227");
 var oa={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function pa(a,b){return(a&b)===b}
 var ta={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ta,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){ua.hasOwnProperty(f)?E("48",f):void 0;var g=f.toLowerCase(),h=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:pa(h,b.MUST_USE_PROPERTY),
@@ -4315,7 +4329,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
 
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4330,7 +4344,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
  * @typechecks
  */
 
-var isNode = __webpack_require__(42);
+var isNode = __webpack_require__(43);
 
 /**
  * @param {*} object The object to check.
@@ -4343,7 +4357,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4371,7 +4385,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4395,18 +4409,18 @@ if (process.env.NODE_ENV !== "production") {
 var React = __webpack_require__(0);
 var invariant = __webpack_require__(13);
 var warning = __webpack_require__(14);
-var ExecutionEnvironment = __webpack_require__(22);
+var ExecutionEnvironment = __webpack_require__(23);
 var _assign = __webpack_require__(5);
 var emptyFunction = __webpack_require__(6);
-var EventListener = __webpack_require__(23);
-var getActiveElement = __webpack_require__(24);
-var shallowEqual = __webpack_require__(25);
-var containsNode = __webpack_require__(26);
-var focusNode = __webpack_require__(27);
+var EventListener = __webpack_require__(24);
+var getActiveElement = __webpack_require__(25);
+var shallowEqual = __webpack_require__(26);
+var containsNode = __webpack_require__(27);
+var focusNode = __webpack_require__(28);
 var emptyObject = __webpack_require__(9);
-var checkPropTypes = __webpack_require__(21);
-var hyphenateStyleName = __webpack_require__(44);
-var camelizeStyleName = __webpack_require__(46);
+var checkPropTypes = __webpack_require__(22);
+var hyphenateStyleName = __webpack_require__(45);
+var camelizeStyleName = __webpack_require__(47);
 
 /**
  * WARNING: DO NOT manually require this module.
@@ -19773,7 +19787,7 @@ module.exports = reactDom;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19788,7 +19802,7 @@ module.exports = reactDom;
 
 
 
-var hyphenate = __webpack_require__(45);
+var hyphenate = __webpack_require__(46);
 
 var msPattern = /^ms-/;
 
@@ -19815,7 +19829,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19851,7 +19865,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19866,7 +19880,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(47);
+var camelize = __webpack_require__(48);
 
 var msPattern = /^-ms-/;
 
@@ -19894,7 +19908,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19929,7 +19943,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19945,11 +19959,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Header = __webpack_require__(49);
+var _Header = __webpack_require__(50);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Shapes = __webpack_require__(50);
+var _Shapes = __webpack_require__(81);
 
 var _Shapes2 = _interopRequireDefault(_Shapes);
 
@@ -19957,7 +19971,7 @@ var _Terminal = __webpack_require__(83);
 
 var _Terminal2 = _interopRequireDefault(_Terminal);
 
-var _reactRouterDom = __webpack_require__(28);
+var _reactRouterDom = __webpack_require__(15);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20010,7 +20024,7 @@ var App = function (_React$Component) {
 exports.default = App;
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20026,9 +20040,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(28);
+var _reactRouterDom = __webpack_require__(15);
 
-var _colors = __webpack_require__(82);
+var _colors = __webpack_require__(35);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20048,7 +20062,6 @@ var Header = function (_React$Component) {
 
     _this.state = {
       count: 0,
-      style: {},
       letterHovered: false
     };
     _this.changeColor = _this.changeColor.bind(_this);
@@ -20057,56 +20070,17 @@ var Header = function (_React$Component) {
 
   _createClass(Header, [{
     key: 'changeColor',
-    value: function changeColor() {
-      if (this.state.count < 11) {
-        this.setState({
-          count: +1,
-          letterHovered: true
-        });
-      } else {
-        this.setState({
-          count: 0,
-          letterHovered: true
-        });
-      }
+    value: function changeColor(event) {
+      var cb = Math.floor(Math.random() * 52);
+      event.target.style.color = _colors.ArrColors[cb];
+      this.setState({
+        count: +1,
+        letterHovered: true
+      });
     }
   }, {
     key: 'render',
     value: function render() {
-      var rando = Math.floor(Math.random() * 20);
-      var style1 = {
-        color: _colors.ArrColors[_colors.Counters[this.state.count] = rando]
-      };
-      var style2 = {
-        color: _colors.ArrColors[_colors.Counters[1]]
-      };
-      var style3 = {
-        color: _colors.ArrColors[_colors.Counters[2]]
-      };
-      var style4 = {
-        color: _colors.ArrColors[_colors.Counters[3]]
-      };
-      var style5 = {
-        color: _colors.ArrColors[_colors.Counters[4]]
-      };
-      var style6 = {
-        color: _colors.ArrColors[_colors.Counters[5]]
-      };
-      var style7 = {
-        color: _colors.ArrColors[_colors.Counters[6]]
-      };
-      var style8 = {
-        color: _colors.ArrColors[_colors.Counters[7]]
-      };
-      var style9 = {
-        color: _colors.ArrColors[_colors.Counters[8]]
-      };
-      var style10 = {
-        color: _colors.ArrColors[_colors.Counters[9]]
-      };
-      var style11 = {
-        color: _colors.ArrColors[_colors.Counters[10]]
-      };
       return _react2.default.createElement(
         'div',
         null,
@@ -20115,7 +20089,7 @@ var Header = function (_React$Component) {
           { className: 'mainTit' },
           _react2.default.createElement(
             'div',
-            { className: 'h1a', onMouseOver: this.changeColor, style: style1 },
+            { className: 'h1a', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20124,7 +20098,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h1b', onMouseOver: this.changeColor, style: style2 },
+            { className: 'h1b', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20133,7 +20107,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h1c', onMouseOver: this.changeColor, style: style3 },
+            { className: 'h1c', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20142,7 +20116,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h1d', onMouseOver: this.changeColor, style: style4 },
+            { className: 'h1d', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20151,7 +20125,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h1e', onMouseOver: this.changeColor, style: style5 },
+            { className: 'h1e', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20160,7 +20134,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h1f', onMouseOver: this.changeColor, style: style6 },
+            { className: 'h1f', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20169,7 +20143,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h1g', onMouseOver: this.changeColor, style: style7 },
+            { className: 'h1g', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20178,7 +20152,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h1h', onMouseOver: this.changeColor, style: style8 },
+            { className: 'h1h', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20187,7 +20161,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h1i', onMouseOver: this.changeColor, style: style9 },
+            { className: 'h1i', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20199,7 +20173,7 @@ var Header = function (_React$Component) {
             { to: '/terminal' },
             _react2.default.createElement(
               'div',
-              { className: 'h1j', onMouseOver: this.changeColor, style: style10 },
+              { className: 'h1j', onMouseOver: this.changeColor },
               _react2.default.createElement(
                 'h1',
                 null,
@@ -20213,7 +20187,7 @@ var Header = function (_React$Component) {
           { className: 'subTit' },
           _react2.default.createElement(
             'div',
-            { className: 'h3a', onMouseOver: this.changeColor, style: style11 },
+            { className: 'h3a', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20222,7 +20196,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3b', onMouseOver: this.changeColor, style: style1 },
+            { className: 'h3b', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20231,7 +20205,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3c', onMouseOver: this.changeColor, style: style2 },
+            { className: 'h3c', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20240,7 +20214,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3d', onMouseOver: this.changeColor, style: style3 },
+            { className: 'h3d', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20249,7 +20223,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3e', onMouseOver: this.changeColor, style: style4 },
+            { className: 'h3e', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20258,7 +20232,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3f', onMouseOver: this.changeColor, style: style5 },
+            { className: 'h3f', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20267,7 +20241,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3g', onMouseOver: this.changeColor, style: style6 },
+            { className: 'h3g', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20276,7 +20250,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3h', onMouseOver: this.changeColor, style: style7 },
+            { className: 'h3h', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20285,7 +20259,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3i', onMouseOver: this.changeColor, style: style8 },
+            { className: 'h3i', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20294,7 +20268,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3j', onMouseOver: this.changeColor, style: style9 },
+            { className: 'h3j', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20303,7 +20277,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3l', onMouseOver: this.changeColor, style: style10 },
+            { className: 'h3l', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20312,7 +20286,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3m', onMouseOver: this.changeColor, style: style11 },
+            { className: 'h3m', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20321,7 +20295,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3n', onMouseOver: this.changeColor, style: style1 },
+            { className: 'h3n', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20330,7 +20304,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3o', onMouseOver: this.changeColor, style: style2 },
+            { className: 'h3o', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20339,7 +20313,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3p', onMouseOver: this.changeColor, style: style3 },
+            { className: 'h3p', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20348,7 +20322,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3q', onMouseOver: this.changeColor, style: style4 },
+            { className: 'h3q', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20357,7 +20331,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3r', onMouseOver: this.changeColor, style: style5 },
+            { className: 'h3r', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20366,7 +20340,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3s', onMouseOver: this.changeColor, style: style6 },
+            { className: 'h3s', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20375,7 +20349,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3t', onMouseOver: this.changeColor, style: style7 },
+            { className: 'h3t', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20388,7 +20362,7 @@ var Header = function (_React$Component) {
           { className: 'signedTit' },
           _react2.default.createElement(
             'div',
-            { className: 'h5a', onMouseOver: this.changeColor, style: style8 },
+            { className: 'h5a', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20397,7 +20371,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5b', onMouseOver: this.changeColor, style: style9 },
+            { className: 'h5b', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20405,11 +20379,11 @@ var Header = function (_React$Component) {
             )
           ),
           _react2.default.createElement(
-            _reactRouterDom.Link,
-            { to: '/sam' },
+            'a',
+            { href: 'https://sam-by-name.github.io/' },
             _react2.default.createElement(
               'div',
-              { className: 'h5c', onMouseOver: this.changeColor, style: style10 },
+              { className: 'h5c', onMouseOver: this.changeColor },
               _react2.default.createElement(
                 'h1',
                 null,
@@ -20418,7 +20392,7 @@ var Header = function (_React$Component) {
             ),
             _react2.default.createElement(
               'div',
-              { className: 'h5d', onMouseOver: this.changeColor, style: style11 },
+              { className: 'h5d', onMouseOver: this.changeColor },
               _react2.default.createElement(
                 'h1',
                 null,
@@ -20427,7 +20401,7 @@ var Header = function (_React$Component) {
             ),
             _react2.default.createElement(
               'div',
-              { className: 'h5e', onMouseOver: this.changeColor, style: style1 },
+              { className: 'h5e', onMouseOver: this.changeColor },
               _react2.default.createElement(
                 'h1',
                 null,
@@ -20437,7 +20411,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5f', onMouseOver: this.changeColor, style: style2 },
+            { className: 'h5f', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20446,7 +20420,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5g', onMouseOver: this.changeColor, style: style3 },
+            { className: 'h5g', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20455,7 +20429,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5h', onMouseOver: this.changeColor, style: style4 },
+            { className: 'h5h', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20467,7 +20441,7 @@ var Header = function (_React$Component) {
             { to: '/Shapes' },
             _react2.default.createElement(
               'div',
-              { className: 'h5i', onMouseOver: this.changeColor, style: style5 },
+              { className: 'h5i', onMouseOver: this.changeColor },
               _react2.default.createElement(
                 'h1',
                 null,
@@ -20477,7 +20451,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5j', onMouseOver: this.changeColor, style: style6 },
+            { className: 'h5j', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20486,7 +20460,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5k', onMouseOver: this.changeColor, style: style7 },
+            { className: 'h5k', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20495,7 +20469,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5l', onMouseOver: this.changeColor, style: style8 },
+            { className: 'h5l', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20504,7 +20478,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5m', onMouseOver: this.changeColor, style: style9 },
+            { className: 'h5m', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20513,7 +20487,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5n', onMouseOver: this.changeColor, style: style10 },
+            { className: 'h5n', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20522,7 +20496,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5o', onMouseOver: this.changeColor, style: style11 },
+            { className: 'h5o', onMouseOver: this.changeColor },
             _react2.default.createElement(
               'h1',
               null,
@@ -20539,81 +20513,7 @@ var Header = function (_React$Component) {
 
 exports.default = Header;
 
-/***/ }),
-/* 50 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouterDom = __webpack_require__(28);
-
-var _Circle = __webpack_require__(81);
-
-var _Circle2 = _interopRequireDefault(_Circle);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// import BabyTriangles from './BabyTriangles'
-var Shapes = function Shapes() {
-  var width = window.innerWidth;
-  var height = window.innerHeight;
-  // const width = 1893
-  // const height = 962
-
-  var circSpace = {
-    cx: width / 2,
-    cy: height / 2,
-    r: 50
-  };
-
-  var circStyle = {
-    stroke: 'blue',
-    strokeWidth: '5',
-    fillRule: 'evenodd',
-    position: 'absolute'
-
-    // let triStyle = {
-    //   fill: 'lime',
-    //   stroke: 'purple',
-    //   strokeWidth: '5',
-    //   fillRule: 'evenodd',
-    //   position: 'absolute',
-    //   zIndex: '100'
-    // }
-    // let points = {
-    //   a: 100,
-    //   b: 10,
-    //   c: 40,
-    //   d: 198,
-    //   e: 190,
-    //   f: 78,
-    //   g: 10,
-    //   h: 78,
-    //   i: 160,
-    //   j: 198
-    // }
-
-  };return _react2.default.createElement(
-    _reactRouterDom.HashRouter,
-    { to: '/' },
-    _react2.default.createElement(
-      'svg',
-      { className: 'shapeBody', width: width, height: height },
-      _react2.default.createElement(_Circle2.default, { circStyle: circStyle, circSpace: circSpace })
-    )
-  );
-};
-// import Tri from './Tri'
-exports.default = Shapes;
+// style={{color: ArrColors[0]}}
 
 /***/ }),
 /* 51 */
@@ -20627,7 +20527,7 @@ exports.default = Shapes;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(18);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -20697,7 +20597,7 @@ BrowserRouter.propTypes = {
 
 var assign = __webpack_require__(5);
 
-var ReactPropTypesSecret = __webpack_require__(15);
+var ReactPropTypesSecret = __webpack_require__(16);
 var checkPropTypes = __webpack_require__(53);
 
 var printWarning = function() {};
@@ -21261,7 +21161,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 var printWarning = function() {};
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactPropTypesSecret = __webpack_require__(15);
+  var ReactPropTypesSecret = __webpack_require__(16);
   var loggedTypeFailures = {};
 
   printWarning = function(text) {
@@ -21357,7 +21257,7 @@ module.exports = checkPropTypes;
 
 
 
-var ReactPropTypesSecret = __webpack_require__(15);
+var ReactPropTypesSecret = __webpack_require__(16);
 
 function emptyFunction() {}
 
@@ -21420,7 +21320,7 @@ module.exports = function() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(29);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -21844,7 +21744,7 @@ function valueEqual(a, b) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(29);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -22163,7 +22063,7 @@ var createHashHistory = function createHashHistory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PathUtils__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(17);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -22338,7 +22238,7 @@ var createMemoryHistory = function createMemoryHistory() {
 
 var assign = __webpack_require__(5);
 
-var ReactPropTypesSecret = __webpack_require__(19);
+var ReactPropTypesSecret = __webpack_require__(20);
 var checkPropTypes = __webpack_require__(61);
 
 var printWarning = function() {};
@@ -22902,7 +22802,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 var printWarning = function() {};
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactPropTypesSecret = __webpack_require__(19);
+  var ReactPropTypesSecret = __webpack_require__(20);
   var loggedTypeFailures = {};
 
   printWarning = function(text) {
@@ -22998,7 +22898,7 @@ module.exports = checkPropTypes;
 
 
 
-var ReactPropTypesSecret = __webpack_require__(19);
+var ReactPropTypesSecret = __webpack_require__(20);
 
 function emptyFunction() {}
 
@@ -23062,7 +22962,7 @@ module.exports = function() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(18);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -23138,7 +23038,7 @@ HashRouter.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(19);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -23554,7 +23454,7 @@ Redirect.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Router__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Router__ = __webpack_require__(19);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -23730,7 +23630,7 @@ StaticRouter.childContextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(21);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -23825,7 +23725,7 @@ Switch.propTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__ = __webpack_require__(21);
 // Written in this round about way for babel-transform-imports
 
 
@@ -23977,15 +23877,89 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(15);
+
+var _Circle = __webpack_require__(82);
+
+var _Circle2 = _interopRequireDefault(_Circle);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import BabyTriangles from './BabyTriangles'
+var Shapes = function Shapes() {
+  var width = window.innerWidth;
+  var height = window.innerHeight;
+  // const width = 1893
+  // const height = 962
+
+  var circSpace = {
+    cx: width / 2,
+    cy: height / 2,
+    r: 50
+  };
+
+  var circStyle = {
+    stroke: 'blue',
+    strokeWidth: '5',
+    fillRule: 'evenodd',
+    position: 'absolute'
+
+    // let triStyle = {
+    //   fill: 'lime',
+    //   stroke: 'purple',
+    //   strokeWidth: '5',
+    //   fillRule: 'evenodd',
+    //   position: 'absolute',
+    //   zIndex: '100'
+    // }
+    // let points = {
+    //   a: 100,
+    //   b: 10,
+    //   c: 40,
+    //   d: 198,
+    //   e: 190,
+    //   f: 78,
+    //   g: 10,
+    //   h: 78,
+    //   i: 160,
+    //   j: 198
+    // }
+
+  };return _react2.default.createElement(
+    _reactRouterDom.HashRouter,
+    { to: '/' },
+    _react2.default.createElement(
+      'svg',
+      { className: 'shapeBody', width: width, height: height },
+      _react2.default.createElement(_Circle2.default, { circStyle: circStyle, circSpace: circSpace })
+    )
+  );
+};
+// import Tri from './Tri'
+exports.default = Shapes;
+
+/***/ }),
+/* 82 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _colors = __webpack_require__(82);
-
-var _colors2 = _interopRequireDefault(_colors);
+var _colors = __webpack_require__(35);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24013,6 +23987,7 @@ var Circle = function (_React$Component) {
     };
     _this.multiplyL = _this.multiplyL.bind(_this, props.circSpace);
     _this.multiplyR = _this.multiplyR.bind(_this, props.circSpace);
+    _this.moveCirc = _this.moveCirc.bind(_this);
     return _this;
   }
 
@@ -24078,6 +24053,13 @@ var Circle = function (_React$Component) {
       });
     }
   }, {
+    key: 'moveCirc',
+    value: function moveCirc(event) {
+      event.target.cx = Math.floor(Math.random() * 100);
+      event.target.cy = Math.floor(Math.random() * 100);
+      event.target.r = Math.floor(Math.random() * 100);
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _this4 = this;
@@ -24090,14 +24072,15 @@ var Circle = function (_React$Component) {
       return _react2.default.createElement(
         'g',
         null,
-        _react2.default.createElement('circle', { cx: cx, cy: cy, r: r, fill: _colors2.default[this.state.countL], style: this.props.circStyle, onKeyDown: this.multiplyL, onMouseOut: this.multiplyL, onMouseOver: this.multiplyL }),
+        _react2.default.createElement('circle', { cx: cx, cy: cy, r: r, fill: _colors.ArrColors[this.state.countL], style: this.props.circStyle, onKeyDown: this.multiplyL, onMouseOut: this.multiplyL, onMouseOver: this.multiplyL }),
         this.state.babiesL.map(function (circSpace, i) {
-          return _react2.default.createElement(Circle, { key: i, fill: _colors2.default[_this4.state.countL], circSpace: circSpace });
+          return _react2.default.createElement(Circle, { key: i, fill: _colors.ArrColors[_this4.state.countL], circSpace: circSpace });
         }),
-        _react2.default.createElement('circle', { cx: cx - 500, cy: cy, r: r, fill: _colors2.default[this.state.countR], style: this.props.circStyle, onMouseOut: this.multiplyL, onMouseOver: this.multiplyR }),
+        _react2.default.createElement('circle', { cx: cx - 500, cy: cy, r: r, fill: _colors.ArrColors[this.state.countR], style: this.props.circStyle, onMouseOut: this.multiplyL, onMouseOver: this.multiplyR }),
         this.state.babiesR.map(function (circSpace, i) {
-          return _react2.default.createElement(Circle, { key: i, fill: _colors2.default[_this4.state.countR], circSpace: circSpace });
-        })
+          return _react2.default.createElement(Circle, { key: i, fill: _colors.ArrColors[_this4.state.countR], circSpace: circSpace });
+        }),
+        _react2.default.createElement('circle', { cx: 500, cy: 20, r: 100, onMouseOver: this.moveCirc })
       );
     }
   }]);
@@ -24106,20 +24089,6 @@ var Circle = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Circle;
-
-/***/ }),
-/* 82 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var ArrColors = exports.ArrColors = ['red', 'blue', 'green', 'yellow', '#9acd32', '#663399', '#f5f5f5', '#f5deb3', '#ee82ee', '#40e0d0', '#ff6347', '#d8bfd8', '#d2b48c', '#4682b4', '#00ff7f', '#fffafa', '#708090', '#87ceeb', '#6a5acd', '#a0522d', '#fff5ee', '#2e8b57', '#f4a460', '#fa8072', '#8b4513', '#4169e1', '#bc8f8f', '#b0e0e6', '#dda0dd', '#ffc0cb', '#cd853f', '#ffdab9', '#ffefd5', '#db7093', '#afeeee', '#98fb98', '#eee8aa', '#da70d6', '#ff4500', '#6b8e23', '#fdf5e6', '#ffdead', '#ffe4b5', '#ffe4e1', '#f5fffa', '#191970', '#c71585', '#48d1cc', '#00fa9a', '#7b68ee', '#3cb371', '#9370db'];
-
-var Counters = exports.Counters = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
 /***/ }),
 /* 83 */

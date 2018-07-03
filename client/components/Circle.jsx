@@ -1,5 +1,5 @@
 import React from 'react'
-import ArrColors from './colors'
+import {ArrColors} from './colors'
 
 class Circle extends React.Component {
   constructor (props) {
@@ -14,6 +14,7 @@ class Circle extends React.Component {
     }
     this.multiplyL = this.multiplyL.bind(this, props.circSpace)
     this.multiplyR = this.multiplyR.bind(this, props.circSpace)
+    this.moveCirc = this.moveCirc.bind(this)
   }
   multiplyL (circSpace) {
     if (this.state.countL % 2) {
@@ -59,6 +60,12 @@ class Circle extends React.Component {
     })
   }
 
+  moveCirc (event) {
+    event.target.cx = Math.floor(Math.random() * 100)
+    event.target.cy = Math.floor(Math.random() * 100)
+    event.target.r = Math.floor(Math.random() * 100)
+  }
+
   render () {
     const {cx, cy, r} = this.props.circSpace
     return (
@@ -71,6 +78,7 @@ class Circle extends React.Component {
         {this.state.babiesR.map((circSpace, i) => {
           return <Circle key={i} fill={ArrColors[this.state.countR]} circSpace={circSpace} />
         })}
+        <circle cx={500} cy={20} r={100} onMouseOver={this.moveCirc}/>
       </g>
     )
   }

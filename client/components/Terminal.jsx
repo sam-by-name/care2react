@@ -9,7 +9,6 @@ class Terminal extends React.Component {
     }
   }
 
-
   render () {
     let box = {
       width: '80%',

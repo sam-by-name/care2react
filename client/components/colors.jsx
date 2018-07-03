@@ -67,4 +67,3 @@ export const Counters = [
   10,
   11
 ]
-
