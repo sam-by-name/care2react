@@ -24018,7 +24018,8 @@ var Circle = function (_React$Component) {
       moveL: 0,
       babiesR: [],
       countR: 51,
-      moveR: 0
+      moveR: 0,
+      randCount: 0
     };
     _this.multiplyL = _this.multiplyL.bind(_this, props.circSpace);
     _this.multiplyR = _this.multiplyR.bind(_this, props.circSpace);
@@ -24090,9 +24091,13 @@ var Circle = function (_React$Component) {
   }, {
     key: 'moveCirc',
     value: function moveCirc(event) {
-      event.target.cx.cx = Math.floor(Math.random() * 100);
-      event.target.cy.cy = Math.floor(Math.random() * 100);
-      event.target.r.r = Math.floor(Math.random() * 100);
+      event.target.style.cx = Math.floor(Math.random() * 100);
+      event.target.style.cy = Math.floor(Math.random() * 100);
+      event.target.style.r = Math.floor(Math.random() * 100);
+      event.target.style.fill = 'red';
+      this.setState({
+        randCount: +1
+      });
     }
   }, {
     key: 'render',
@@ -24115,7 +24120,7 @@ var Circle = function (_React$Component) {
         this.state.babiesR.map(function (circSpace, i) {
           return _react2.default.createElement(Circle, { key: i, fill: _colors.ArrColors[_this4.state.countR], circSpace: circSpace });
         }),
-        _react2.default.createElement('circle', { cx: 500, cy: 20, r: 100, onMouseOver: this.moveCirc })
+        _react2.default.createElement('circle', { r: 100, onMouseOver: this.moveCirc })
       );
     }
   }]);
