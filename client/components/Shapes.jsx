@@ -48,8 +48,6 @@ const Shapes = () => {
     <Link to='/'>
       <svg className='shapeBody' width={width} height={height}>
         {/* <Tri triStyle={triStyle} points={points} /> */}
-        {/* <Tri points='100, 10 40,198 190,78 10,78 160, 198' style={triStyle} /> */}
-        {/* <circle cx={triangles.width} cy={triangles.height} r={triangles.r} style={circStyle} /> */}
         <Circle circStyle={circStyle} circSpace={circSpace} />
       </svg>
     </Link>

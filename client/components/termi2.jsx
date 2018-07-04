@@ -20,12 +20,13 @@ class Terminal extends React.Component {
   aIWriter () {
     this.iniConts = ' '
     this.iniRow = Math.max(0, this.startArr - this.scrollAt)
-    // let desti = document.getElementById('aITalks')
 
     while (this.iniRow < this.startArr) {
       this.iniConts += this.state.input[this.iniRow++] + '<br />'
     }
-    document.getElementById('aITalks').innerHTML = this.iniConts + this.state[this.startArr].substring(0, this.iniPos) + '|'
+    document.getElementById('aITalks').innerHTML = this.iniConts +
+    this.state[this.startArr].substring(0, this.iniPos) + '|'
+
     if (this.iniPos++ === this.arrLength) {
       this.iniPos = 0
       this.startArr++

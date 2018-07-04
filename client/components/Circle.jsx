@@ -62,10 +62,10 @@ class Circle extends React.Component {
   }
 
   moveCirc (event) {
-    event.target.style.cx = Math.floor(Math.random() * 100)
-    event.target.style.cy = Math.floor(Math.random() * 100)
-    event.target.style.r = Math.floor(Math.random() * 100)
-    event.target.style.fill = 'red'
+    event.target.style.cx = Math.floor(Math.random() * 1000)
+    event.target.style.cy = Math.floor(Math.random() * 1000)
+    event.target.style.r = Math.floor(Math.random() * 500)
+    event.target.style.fill = ArrColors[this.state.countL]
     this.setState({
       randCount: +1
     })
@@ -83,7 +83,7 @@ class Circle extends React.Component {
         {this.state.babiesR.map((circSpace, i) => {
           return <Circle key={i} fill={ArrColors[this.state.countR]} circSpace={circSpace} />
         })}
-        <circle r={100} onMouseOver={this.moveCirc}/>
+        <circle r={100} cx={900} cy={ this.props.width} onMouseOver={this.moveCirc}/>
       </g>
     )
   }

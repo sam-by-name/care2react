@@ -19975,6 +19975,10 @@ var _Terminal = __webpack_require__(83);
 
 var _Terminal2 = _interopRequireDefault(_Terminal);
 
+var _Insults = __webpack_require__(84);
+
+var _Insults2 = _interopRequireDefault(_Insults);
+
 var _reactRouterDom = __webpack_require__(15);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -20016,7 +20020,8 @@ var App = function (_React$Component) {
           { className: 'myBody' },
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Header2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/terminal', component: _Terminal2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/Shapes', component: _Shapes2.default })
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/shapes', component: _Shapes2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/insults', component: _Insults2.default })
         )
       );
     }
@@ -20498,7 +20503,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             _reactRouterDom.Link,
-            { to: '/Shapes' },
+            { to: '/shapes' },
             _react2.default.createElement(
               'div',
               { className: 'h38', onMouseOver: this.changeColor, onMouseEnter: this.sound },
@@ -24116,10 +24121,10 @@ var Circle = function (_React$Component) {
   }, {
     key: 'moveCirc',
     value: function moveCirc(event) {
-      event.target.style.cx = Math.floor(Math.random() * 100);
-      event.target.style.cy = Math.floor(Math.random() * 100);
-      event.target.style.r = Math.floor(Math.random() * 100);
-      event.target.style.fill = 'red';
+      event.target.style.cx = Math.floor(Math.random() * 1000);
+      event.target.style.cy = Math.floor(Math.random() * 1000);
+      event.target.style.r = Math.floor(Math.random() * 500);
+      event.target.style.fill = _colors.ArrColors[this.state.countL];
       this.setState({
         randCount: +1
       });
@@ -24145,7 +24150,7 @@ var Circle = function (_React$Component) {
         this.state.babiesR.map(function (circSpace, i) {
           return _react2.default.createElement(Circle, { key: i, fill: _colors.ArrColors[_this4.state.countR], circSpace: circSpace });
         }),
-        _react2.default.createElement('circle', { r: 100, onMouseOver: this.moveCirc })
+        _react2.default.createElement('circle', { r: 100, cx: 900, cy: this.props.width, onMouseOver: this.moveCirc })
       );
     }
   }]);
@@ -24181,7 +24186,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 // import {Link} from 'react-router-dom'
-// import String from './string'
+// import {string} from './text'
 
 var Terminal = function (_React$Component) {
   _inherits(Terminal, _React$Component);
@@ -24231,6 +24236,73 @@ var Terminal = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Terminal;
+
+/***/ }),
+/* 84 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+// import {appendInsults} from '../insultApi'
+
+var Insults = function (_React$Component) {
+  _inherits(Insults, _React$Component);
+
+  function Insults(props) {
+    _classCallCheck(this, Insults);
+
+    var _this = _possibleConstructorReturn(this, (Insults.__proto__ || Object.getPrototypeOf(Insults)).call(this, props));
+
+    _this.state = {};
+    return _this;
+  }
+  // getInsulted () {
+  //   appendInsults()
+  // }
+
+  _createClass(Insults, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'h1',
+          null,
+          'hi'
+        ),
+        _react2.default.createElement(
+          'button',
+          { type: 'button', onClick: this.getInsulted },
+          'Wanna feel bad?'
+        )
+      );
+    }
+  }]);
+
+  return Insults;
+}(_react2.default.Component);
+
+exports.default = Insults;
 
 /***/ })
 /******/ ]);

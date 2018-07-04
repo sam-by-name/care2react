@@ -123,7 +123,7 @@ class Header extends React.Component {
           <div className='h35' onMouseOver={this.changeColor} onClick={this.letterUp} onMouseEnter={this.sound} ><h1>.</h1></div>
           <div className='h36' onMouseOver={this.changeColor} onClick={this.letterUp} onMouseEnter={this.sound} ><h1>l</h1></div>
           <div className='h37' onMouseOver={this.changeColor} onClick={this.letterUp} onMouseEnter={this.sound} ><h1>.</h1></div>
-          <Link to='/Shapes'><div className='h38' onMouseOver={this.changeColor} onMouseEnter={this.sound} ><h1>s</h1></div></Link>
+          <Link to='/shapes'><div className='h38' onMouseOver={this.changeColor} onMouseEnter={this.sound} ><h1>s</h1></div></Link>
           <div className='h39' onMouseOver={this.changeColor} onClick={this.letterUp} onMouseEnter={this.sound} ><h1>a</h1></div>
           <div className='h40' onMouseOver={this.changeColor} onClick={this.letterUp} onMouseEnter={this.sound} ><h1>n</h1></div>
           <div className='h41' onMouseOver={this.changeColor} onClick={this.letterUp} onMouseEnter={this.sound} ><h1>d</h1></div>

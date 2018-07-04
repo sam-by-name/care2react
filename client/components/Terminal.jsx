@@ -1,6 +1,6 @@
 import React from 'react'
 // import {Link} from 'react-router-dom'
-// import String from './string'
+// import {string} from './text'
 
 class Terminal extends React.Component {
   constructor (props) {
