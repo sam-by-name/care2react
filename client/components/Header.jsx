@@ -11,7 +11,8 @@ class Header extends React.Component {
     }
     this.changeColor = this.changeColor.bind(this)
     // this.warp = this.warp.bind(this)
-    this.transLetter = this.transLetter.bind(this)
+    this.disco = this.disco.bind(this)
+    this.letterUp = this.letterUp.bind(this)
   }
 
   changeColor (event) {
@@ -25,16 +26,16 @@ class Header extends React.Component {
 
   // warp (event) {
   //   const ranSiz = Math.Floor(Math.random() * 5)
-  //   let target = event.Target
-  //   target.parentElement.style.fontSize = ranSiz+'vw'
+  //   let target = event.target
+  //   target.parentElement.style.fontSize = ranSiz + 'vw'
   //   this.setState({
   //     count: +1,
   //     letterHovered: true
   //   })
   // }
 
-  transLetter (event) {
-    for (let i = -1; i < Alpha.length; i++) {
+  letterUp (event) {
+    for (let i = 0; i < Alpha.length; i++) {
       if ((event.target.innerHTML === Alpha[i]) && (event.target.innerHTM !== Alpha[25])) {
         return (event.target.innerHTML = Alpha[i + 1])
       } else if (event.target.innerHTML === 'z') {
@@ -45,66 +46,75 @@ class Header extends React.Component {
       count: +1
     })
   }
+  disco () {
+    for (let i = 1; i < 45; i++) {
+      const ranCol = Math.floor(Math.random() * 52)
+      document.getElementsByClassName(`h${i}`)[0].style.color = ArrColors[ranCol]
+    }
+    this.setState({
+      count: +1
+    })
+  }
 
   render () {
     return (
       <div>
-        <div className='mainTit'>
-          <div className='h1a' onMouseOver={this.changeColor} onMouseOut={this.warp}><h1>C</h1></div>
-          <div className='h1b' onMouseOver={this.changeColor} onClick={this.transLetter}><h1>a</h1></div>
-          <div className='h1c' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>r</h1></div>
-          <div className='h1d' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>e</h1></div>
-          <div className='h1e' onMouseOver={this.changeColor}><h1>2</h1></div>
-          <div className='h1f' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>R</h1></div>
-          <div className='h1g' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>e</h1></div>
-          <div className='h1h' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>a</h1></div>
-          <div className='h1i' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>c</h1></div>
-          <Link to='/terminal'><div className='h1j' onMouseOver={this.changeColor} ><h1>t</h1></div></Link>
+        <div className='mainTit' >
+          <div className='h1' onMouseOver={this.changeColor} onClick={this.letterUp} onMouseOut={this.warp}><h1>c</h1></div>
+          <div className='h2' onMouseOver={this.changeColor} onClick={this.letterUp}><h1>a</h1></div>
+          <div className='h3' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>r</h1></div>
+          <div className='h4' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>e</h1></div>
+          <div className='h5' onMouseOver={this.changeColor} onClick={this.disco}><h1>2</h1></div>
+          <div className='h6' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>R</h1></div>
+          <div className='h7' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>e</h1></div>
+          <div className='h8' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>a</h1></div>
+          <div className='h9' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>c</h1></div>
+          <Link to='/terminal'><div className='h10' onMouseOver={this.changeColor} ><h1>t</h1></div></Link>
         </div>
 
         <div className='subTit'>
-          <div className='h3a' onMouseOver={this.changeColor} onClick={this.transLetter}><h1>A</h1></div>
+          <div className='h11' onMouseOver={this.changeColor} onClick={this.letterUp}><h1>a</h1></div>
 
-          <div className='h3b' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>r</h1></div>
-          <div className='h3c' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>e</h1></div>
-          <div className='h3d' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>a</h1></div>
-          <div className='h3e' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>c</h1></div>
-          <div className='h3f' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>t</h1></div>
-          <div className='h3g' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>i</h1></div>
-          <div className='h3h' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>v</h1></div>
-          <div className='h3i' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>e</h1></div>
+          <div className='h12' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>r</h1></div>
+          <div className='h13' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>e</h1></div>
+          <div className='h14' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>a</h1></div>
+          <div className='h15' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>c</h1></div>
+          <div className='h16' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>t</h1></div>
+          <div className='h17' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>i</h1></div>
+          <div className='h18' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>v</h1></div>
+          <div className='h19' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>e</h1></div>
 
-          <div className='h3j' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>p</h1></div>
-          <div className='h3l' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>l</h1></div>
-          <div className='h3m' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>a</h1></div>
-          <div className='h3n' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>y</h1></div>
-          <div className='h3o' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>g</h1></div>
-          <div className='h3p' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>r</h1></div>
-          <div className='h3q' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>o</h1></div>
-          <div className='h3r' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>u</h1></div>
-          <div className='h3s' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>n</h1></div>
-          <div className='h3t' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>d</h1></div>
+          <div className='h20' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>p</h1></div>
+          <div className='h21' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>l</h1></div>
+          <div className='h22' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>a</h1></div>
+          <div className='h23' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>y</h1></div>
+          <div className='h24' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>g</h1></div>
+          <div className='h25' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>r</h1></div>
+          <div className='h26' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>o</h1></div>
+          <div className='h27' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>u</h1></div>
+          <div className='h28' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>n</h1></div>
+          <div className='h29' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>d</h1></div>
         </div>
 
         <div className='signedTit'>
-          <div className='h5a' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>B</h1></div>
-          <div className='h5b' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>y</h1></div>
+          <div className='h30' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>b</h1></div>
+          <div className='h31' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>y</h1></div>
 
           <a href='https://sam-by-name.github.io/'>
-            <div className='h5c' onMouseOver={this.changeColor} ><h1>S</h1></div>
-            <div className='h5d' onMouseOver={this.changeColor} ><h1>a</h1></div>
-            <div className='h5e' onMouseOver={this.changeColor} ><h1>m</h1></div>
+            <div className='h32' onMouseOver={this.changeColor} ><h1>S</h1></div>
+            <div className='h33' onMouseOver={this.changeColor} ><h1>a</h1></div>
+            <div className='h34' onMouseOver={this.changeColor} ><h1>m</h1></div>
           </a>
-          <div className='h5f' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>.</h1></div>
-          <div className='h5g' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>L</h1></div>
-          <div className='h5h' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>.</h1></div>
-          <Link to='/Shapes'><div className='h5i' onMouseOver={this.changeColor}><h1>S</h1></div></Link>
-          <div className='h5j' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>a</h1></div>
-          <div className='h5k' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>n</h1></div>
-          <div className='h5l' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>d</h1></div>
-          <div className='h5m' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>e</h1></div>
-          <div className='h5n' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>r</h1></div>
-          <div className='h5o' onMouseOver={this.changeColor} onClick={this.transLetter} ><h1>s</h1></div>
+          <div className='h35' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>.</h1></div>
+          <div className='h36' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>l</h1></div>
+          <div className='h37' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>.</h1></div>
+          <Link to='/Shapes'><div className='h38' onMouseOver={this.changeColor}><h1>s</h1></div></Link>
+          <div className='h39' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>a</h1></div>
+          <div className='h40' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>n</h1></div>
+          <div className='h41' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>d</h1></div>
+          <div className='h42' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>e</h1></div>
+          <div className='h43' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>r</h1></div>
+          <div className='h44' onMouseOver={this.changeColor} onClick={this.letterUp} ><h1>s</h1></div>
         </div>
       </div>
     )

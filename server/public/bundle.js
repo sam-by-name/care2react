@@ -20068,7 +20068,8 @@ var Header = function (_React$Component) {
     };
     _this.changeColor = _this.changeColor.bind(_this);
     // this.warp = this.warp.bind(this)
-    _this.transLetter = _this.transLetter.bind(_this);
+    _this.disco = _this.disco.bind(_this);
+    _this.letterUp = _this.letterUp.bind(_this);
     return _this;
   }
 
@@ -20085,8 +20086,8 @@ var Header = function (_React$Component) {
 
     // warp (event) {
     //   const ranSiz = Math.Floor(Math.random() * 5)
-    //   let target = event.Target
-    //   target.parentElement.style.fontSize = ranSiz+'vw'
+    //   let target = event.target
+    //   target.parentElement.style.fontSize = ranSiz + 'vw'
     //   this.setState({
     //     count: +1,
     //     letterHovered: true
@@ -20094,14 +20095,25 @@ var Header = function (_React$Component) {
     // }
 
   }, {
-    key: 'transLetter',
-    value: function transLetter(event) {
-      for (var i = -1; i < _colors.Alpha.length; i++) {
+    key: 'letterUp',
+    value: function letterUp(event) {
+      for (var i = 0; i < _colors.Alpha.length; i++) {
         if (event.target.innerHTML === _colors.Alpha[i] && event.target.innerHTM !== _colors.Alpha[25]) {
           return event.target.innerHTML = _colors.Alpha[i + 1];
         } else if (event.target.innerHTML === 'z') {
           return event.target.innerHTML = _colors.Alpha[0];
         }
+      }
+      this.setState({
+        count: +1
+      });
+    }
+  }, {
+    key: 'disco',
+    value: function disco() {
+      for (var i = 1; i < 45; i++) {
+        var ranCol = Math.floor(Math.random() * 52);
+        document.getElementsByClassName('h' + i)[0].style.color = _colors.ArrColors[ranCol];
       }
       this.setState({
         count: +1
@@ -20118,16 +20130,16 @@ var Header = function (_React$Component) {
           { className: 'mainTit' },
           _react2.default.createElement(
             'div',
-            { className: 'h1a', onMouseOver: this.changeColor, onMouseOut: this.warp },
+            { className: 'h1', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseOut: this.warp },
             _react2.default.createElement(
               'h1',
               null,
-              'C'
+              'c'
             )
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h1b', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h2', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20136,7 +20148,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h1c', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h3', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20145,7 +20157,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h1d', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h4', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20154,7 +20166,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h1e', onMouseOver: this.changeColor },
+            { className: 'h5', onMouseOver: this.changeColor, onClick: this.disco },
             _react2.default.createElement(
               'h1',
               null,
@@ -20163,7 +20175,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h1f', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h6', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20172,7 +20184,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h1g', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h7', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20181,7 +20193,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h1h', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h8', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20190,7 +20202,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h1i', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h9', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20202,7 +20214,7 @@ var Header = function (_React$Component) {
             { to: '/terminal' },
             _react2.default.createElement(
               'div',
-              { className: 'h1j', onMouseOver: this.changeColor },
+              { className: 'h10', onMouseOver: this.changeColor },
               _react2.default.createElement(
                 'h1',
                 null,
@@ -20216,34 +20228,7 @@ var Header = function (_React$Component) {
           { className: 'subTit' },
           _react2.default.createElement(
             'div',
-            { className: 'h3a', onMouseOver: this.changeColor, onClick: this.transLetter },
-            _react2.default.createElement(
-              'h1',
-              null,
-              'A'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'h3b', onMouseOver: this.changeColor, onClick: this.transLetter },
-            _react2.default.createElement(
-              'h1',
-              null,
-              'r'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'h3c', onMouseOver: this.changeColor, onClick: this.transLetter },
-            _react2.default.createElement(
-              'h1',
-              null,
-              'e'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'h3d', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h11', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20252,7 +20237,34 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3e', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h12', onMouseOver: this.changeColor, onClick: this.letterUp },
+            _react2.default.createElement(
+              'h1',
+              null,
+              'r'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'h13', onMouseOver: this.changeColor, onClick: this.letterUp },
+            _react2.default.createElement(
+              'h1',
+              null,
+              'e'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'h14', onMouseOver: this.changeColor, onClick: this.letterUp },
+            _react2.default.createElement(
+              'h1',
+              null,
+              'a'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'h15', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20261,7 +20273,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3f', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h16', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20270,7 +20282,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3g', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h17', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20279,7 +20291,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3h', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h18', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20288,7 +20300,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3i', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h19', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20297,7 +20309,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3j', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h20', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20306,7 +20318,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3l', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h21', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20315,7 +20327,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3m', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h22', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20324,7 +20336,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3n', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h23', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20333,7 +20345,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3o', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h24', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20342,7 +20354,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3p', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h25', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20351,7 +20363,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3q', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h26', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20360,7 +20372,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3r', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h27', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20369,7 +20381,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3s', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h28', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20378,7 +20390,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3t', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h29', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20391,16 +20403,16 @@ var Header = function (_React$Component) {
           { className: 'signedTit' },
           _react2.default.createElement(
             'div',
-            { className: 'h5a', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h30', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
-              'B'
+              'b'
             )
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5b', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h31', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20412,7 +20424,7 @@ var Header = function (_React$Component) {
             { href: 'https://sam-by-name.github.io/' },
             _react2.default.createElement(
               'div',
-              { className: 'h5c', onMouseOver: this.changeColor },
+              { className: 'h32', onMouseOver: this.changeColor },
               _react2.default.createElement(
                 'h1',
                 null,
@@ -20421,7 +20433,7 @@ var Header = function (_React$Component) {
             ),
             _react2.default.createElement(
               'div',
-              { className: 'h5d', onMouseOver: this.changeColor },
+              { className: 'h33', onMouseOver: this.changeColor },
               _react2.default.createElement(
                 'h1',
                 null,
@@ -20430,7 +20442,7 @@ var Header = function (_React$Component) {
             ),
             _react2.default.createElement(
               'div',
-              { className: 'h5e', onMouseOver: this.changeColor },
+              { className: 'h34', onMouseOver: this.changeColor },
               _react2.default.createElement(
                 'h1',
                 null,
@@ -20440,7 +20452,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5f', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h35', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20449,16 +20461,16 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5g', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h36', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
-              'L'
+              'l'
             )
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5h', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h37', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20470,17 +20482,17 @@ var Header = function (_React$Component) {
             { to: '/Shapes' },
             _react2.default.createElement(
               'div',
-              { className: 'h5i', onMouseOver: this.changeColor },
+              { className: 'h38', onMouseOver: this.changeColor },
               _react2.default.createElement(
                 'h1',
                 null,
-                'S'
+                's'
               )
             )
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5j', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h39', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20489,7 +20501,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5k', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h40', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20498,7 +20510,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5l', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h41', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20507,7 +20519,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5m', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h42', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20516,7 +20528,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5n', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h43', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
@@ -20525,7 +20537,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5o', onMouseOver: this.changeColor, onClick: this.transLetter },
+            { className: 'h44', onMouseOver: this.changeColor, onClick: this.letterUp },
             _react2.default.createElement(
               'h1',
               null,
