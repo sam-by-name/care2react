@@ -28,6 +28,7 @@ const Terminal = () => {
     </div>
   )
 }
+
 var aIWriter = () => {
   var input = "There are only 10 types of people in the world, Those who understand binary, and those who don't"
   var arr = input.split('', 9999)
