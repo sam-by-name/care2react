@@ -74,3 +74,16 @@ export const Alpha = [
   'o', 'p', 'q', 'r', 's', 't', 'u',
   'v', 'w', 'x', 'y', 'z'
 ]
+
+export const SoundBites = [
+  '/sounds/blop.mp3',
+  '/sounds/btn.mp3',
+  '/sounds/chkout.mp3',
+  '/sounds/chuck.mp3',
+  '/sounds/cldlaugh.mp3',
+  '/sounds/farm.mp3',
+  '/sounds/frog.mp3',
+  '/sounds/jmp.mp3',
+  '/sounds/pgtrn.mp3',
+  '/sounds/ting.mp3'
+]

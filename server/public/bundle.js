@@ -2611,6 +2611,8 @@ var Counters = exports.Counters = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
 var Alpha = exports.Alpha = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
+var SoundBites = exports.SoundBites = ['/sounds/blop.mp3', '/sounds/btn.mp3', '/sounds/chkout.mp3', '/sounds/chuck.mp3', '/sounds/cldlaugh.mp3', '/sounds/farm.mp3', '/sounds/frog.mp3', '/sounds/jmp.mp3', '/sounds/pgtrn.mp3', '/sounds/ting.mp3'];
+
 /***/ }),
 /* 36 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -20067,9 +20069,10 @@ var Header = function (_React$Component) {
       letterHovered: false
     };
     _this.changeColor = _this.changeColor.bind(_this);
-    // this.warp = this.warp.bind(this)
+    _this.warp = _this.warp.bind(_this);
     _this.disco = _this.disco.bind(_this);
     _this.letterUp = _this.letterUp.bind(_this);
+    _this.sound = _this.sound.bind(_this);
     return _this;
   }
 
@@ -20083,17 +20086,16 @@ var Header = function (_React$Component) {
         letterHovered: true
       });
     }
-
-    // warp (event) {
-    //   const ranSiz = Math.Floor(Math.random() * 5)
-    //   let target = event.target
-    //   target.parentElement.style.fontSize = ranSiz + 'vw'
-    //   this.setState({
-    //     count: +1,
-    //     letterHovered: true
-    //   })
-    // }
-
+  }, {
+    key: 'warp',
+    value: function warp(event) {
+      var ranSiz = Math.Floor(Math.random() * 5);
+      event.target.innerHTML.style.fontSize = ranSiz + 'px';
+      this.setState({
+        count: +1,
+        letterHovered: true
+      });
+    }
   }, {
     key: 'letterUp',
     value: function letterUp(event) {
@@ -20111,13 +20113,30 @@ var Header = function (_React$Component) {
   }, {
     key: 'disco',
     value: function disco() {
-      for (var i = 1; i < 45; i++) {
+      // const totCount = 9999
+      // let count = 0
+      for (var i = 1; i <= 46; i++) {
+        // if (i === 45) {
+        //   i = 0
+        // } else if (count === totCount) {
+        //   return
+        // } else {
         var ranCol = Math.floor(Math.random() * 52);
         document.getElementsByClassName('h' + i)[0].style.color = _colors.ArrColors[ranCol];
+        // count = count + 1
+        // }
       }
       this.setState({
         count: +1
       });
+    }
+  }, {
+    key: 'sound',
+    value: function sound() {
+      var audio = new Audio(_colors.SoundBites[Math.floor(Math.random() * 10)]);
+      audio.play();
+      // audio.pause()
+      // audio.currentTime = 0
     }
   }, {
     key: 'render',
@@ -20130,7 +20149,7 @@ var Header = function (_React$Component) {
           { className: 'mainTit' },
           _react2.default.createElement(
             'div',
-            { className: 'h1', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseOut: this.warp },
+            { className: 'h1', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseOut: this.warp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20139,7 +20158,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h2', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h2', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20148,7 +20167,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h3', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h3', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20157,7 +20176,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h4', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h4', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20166,7 +20185,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h5', onMouseOver: this.changeColor, onClick: this.disco },
+            { className: 'h5', onMouseOver: this.changeColor, onClick: this.disco, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20175,7 +20194,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h6', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h6', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20184,7 +20203,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h7', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h7', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20193,7 +20212,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h8', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h8', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20202,7 +20221,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h9', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h9', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20214,7 +20233,7 @@ var Header = function (_React$Component) {
             { to: '/terminal' },
             _react2.default.createElement(
               'div',
-              { className: 'h10', onMouseOver: this.changeColor },
+              { className: 'h10', onMouseOver: this.changeColor, onMouseEnter: this.sound },
               _react2.default.createElement(
                 'h1',
                 null,
@@ -20228,7 +20247,7 @@ var Header = function (_React$Component) {
           { className: 'subTit' },
           _react2.default.createElement(
             'div',
-            { className: 'h11', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h11', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20237,7 +20256,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h12', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h12', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20246,7 +20265,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h13', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h13', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20255,7 +20274,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h14', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h14', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20264,7 +20283,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h15', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h15', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20273,7 +20292,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h16', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h16', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20282,7 +20301,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h17', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h17', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20291,7 +20310,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h18', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h18', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20300,7 +20319,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h19', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h19', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20309,7 +20328,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h20', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h20', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20318,7 +20337,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h21', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h21', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20327,7 +20346,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h22', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h22', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20336,7 +20355,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h23', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h23', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20345,7 +20364,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h24', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h24', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20354,7 +20373,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h25', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h25', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20363,7 +20382,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h26', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h26', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20372,7 +20391,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h27', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h27', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20381,7 +20400,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h28', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h28', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20390,7 +20409,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h29', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h29', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20403,7 +20422,7 @@ var Header = function (_React$Component) {
           { className: 'signedTit' },
           _react2.default.createElement(
             'div',
-            { className: 'h30', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h30', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20412,7 +20431,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h31', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h31', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20452,7 +20471,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h35', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h35', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20461,7 +20480,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h36', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h36', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20470,7 +20489,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h37', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h37', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20482,7 +20501,7 @@ var Header = function (_React$Component) {
             { to: '/Shapes' },
             _react2.default.createElement(
               'div',
-              { className: 'h38', onMouseOver: this.changeColor },
+              { className: 'h38', onMouseOver: this.changeColor, onMouseEnter: this.sound },
               _react2.default.createElement(
                 'h1',
                 null,
@@ -20492,7 +20511,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h39', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h39', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20501,7 +20520,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h40', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h40', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20510,7 +20529,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h41', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h41', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20519,7 +20538,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h42', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h42', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20528,7 +20547,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h43', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h43', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
@@ -20537,7 +20556,7 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'h44', onMouseOver: this.changeColor, onClick: this.letterUp },
+            { className: 'h44', onMouseOver: this.changeColor, onClick: this.letterUp, onMouseEnter: this.sound },
             _react2.default.createElement(
               'h1',
               null,
